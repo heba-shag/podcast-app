@@ -1,0 +1,335 @@
+ .trendy-section,
+.education-section,
+.entertainment-section,
+.business-section{
+    flex-wrap: wrap;
+    margin: 1rem 2rem 3rem 2rem;
+    height: 19rem;
+
+    .header{
+        margin-bottom: 1rem;
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        .more{
+            cursor: pointer;
+            color: var(--second-color);
+            li{
+                display: none;
+            }
+
+            span{
+                font-size: 1.2rem;
+            }
+        }
+
+    }
+
+    .cards-container{
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        justify-content: start;
+        gap: 20px;
+        height: 17rem;
+        align-items: start;
+        .card{
+            flex: 0 0 auto; 
+            width: 10rem;
+            border-radius: 10px;
+            background: white;
+            
+            img{
+                width: 100%;
+                border-radius: 10px;
+                object-fit: cover;
+                border-radius: 10px 10px 0 0;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+            }
+
+            h2{
+                padding: .7rem 0;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+
+            p{
+                font-size: .7rem;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.top-picks-section{
+    flex-wrap: wrap;
+    margin: 1rem 2rem 3rem 2rem;
+    height: 15rem;
+
+    .header{
+        margin-bottom: .1rem;
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        .more{
+            cursor: pointer;
+            color: var(--second-color);
+            li{
+                display: none;
+            }
+
+            span{
+                font-size: 1.2rem;
+            }
+        }
+
+    }
+
+    .cards-container{
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        justify-content: start;
+        gap: 20px;
+        height: 12rem;
+        align-items: start;
+
+        .card{
+            height: 100%;
+            width: 100%;
+            background: #ddd;
+            padding: 1rem;
+            flex: 0 0 auto;
+            border-radius: 10px;
+            align-items: start;
+            justify-content: start;
+            
+            img{
+                width: 9rem;
+                border-radius: 10px;
+                object-fit: cover;
+                border-radius: 10px 10px 0 0;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+            }
+
+            .text-container{
+                margin-left: 1rem;
+                width: 100%;
+                /* display: flex; */
+
+                h2{
+                    padding: .7rem 0;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                }
+    
+                p{
+                    font-size: 1.1rem;
+                    font-weight: 300;
+                }
+            }
+           
+        }
+
+    }
+}
+
+.ads-section{
+    height: 15rem;
+    width: 100%;
+    img{
+        border: none;
+        width: 50%;
+        height: 100%;
+    }
+}
+
+.audiobooks-section{
+    flex-wrap: wrap;
+    margin: 1rem 2rem 3rem 2rem;
+    height: 20rem;
+    .header{
+        margin-bottom: .1rem;
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        .more{
+            cursor: pointer;
+            color: var(--second-color);
+            li{
+                display: none;
+            }
+
+            span{
+                font-size: 1.2rem;
+            }
+        }
+
+    }
+
+    .cards-container{
+        width: 100%;
+        flex-wrap: wrap;
+        overflow-x: auto;
+        overflow-y: visible;
+        justify-content: start;
+        /* height: 12rem; */
+        align-items: start;
+        .row1,.row2{ 
+            width: 100%;
+            flex-wrap: nowrap;
+            gap: 20px;
+            height: 40%;
+            margin-bottom: 1rem;
+            .card{
+                position: relative;
+                height: 100%;
+                width: 100%;
+                background: #ddd;
+                padding: .7rem .5rem;
+                flex: 0 0 auto;
+                border-radius: 10px;
+                align-items: start;
+                justify-content: start;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                img{
+                    width: 5rem;
+                    border-radius: 10px;
+                    object-fit: cover;
+                    border-radius: 10px 10px 0 0;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                    object-fit: cover;
+                }
+    
+                .text-container{
+                    margin-left: 1rem;
+                    width: 100%;
+    
+                    h2{
+                        font-size: .8rem;
+                        font-weight: 600;
+                    }
+        
+                    p{
+                        width: 50%;
+                        margin: .5rem 0;
+                        font-size: .7rem;
+                        font-weight: 300;
+                    }
+
+                    ul{
+                        display: flex;
+                        justify-content: space-between;
+                        li{
+                            list-style: none;
+                            font-size: .7rem;
+                        }
+                    }
+                }
+
+                .icon{
+                    position: absolute;
+                    top: .7rem;
+                    font-size: 1.5rem;
+                    right: 1rem;
+                    color: var(--main-color);
+                }
+            
+            }
+            
+        }
+
+
+    }
+}
+
+.aboutUs-section{
+    flex-wrap: wrap;
+    margin: 1rem 2rem 3rem 2rem;
+    height: 20rem;
+    .header{
+        margin-bottom: .1rem;
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .cards-container{
+        padding: 1.2rem 0;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        p{
+            font-size: 1.2rem;
+            height: 100%;
+            padding:.2rem;
+            width: 50%;
+        }  
+    
+        .img{
+            background-image: url('../media/Logo.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0, 0, 0, 0.9);
+            width: 43%;
+            height: 100%;
+            filter: blur(3px);
+            justify-content: center;
+            border-radius: 2rem;
+            -webkit-border-radius: 2rem;
+            -moz-border-radius: 2rem;
+            -ms-border-radius: 2rem;
+            -o-border-radius: 2rem;
+            -webkit-filter: blur(3px);
+
+            .icon{
+                font-size: 3rem;
+                color: orange;
+            }
+        }
+    }
+    
+}
+
+.slick-slider {
+  width: 100%;
+}
+
+.slick-list {
+  padding: 10px 0;
+}
+
+.slick-slide {
+  padding: 0 10px;
+}
+
+.slick-slide > div {
+  height: 100%;
+}
+
+@media screen and (max-device-width:550px){ 
+  
+    .aboutUs-section{
+        p{
+            overflow: auto;
+        }
+    }
+
+    
+}

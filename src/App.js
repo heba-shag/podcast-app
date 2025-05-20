@@ -1,21 +1,26 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import HomePage from './HomePage';
+import WelcomePage from './authPages/WelcomePage';
+import PersonalPage from './authPages/PersonalPage';
+import SignUp from './authPages/SignUp';
+import Login from './authPages/Login';
+import VerificationPage from './authPages/VerificationPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <Routes>
+
+        <Route path="/" element={<PersonalPage />} />
+        <Route path="/welcome-page" element={<WelcomePage />} />
+        <Route path="/home-page" element={<HomePage />} />
+        <Route path='/sign-up' element={<SignUp/>}/>
+        <Route path='/login-page' element={<Login/>}/>
+        <Route path='/verification-page' element={<VerificationPage/>}/>
+
+        
+      </Routes>
     </div>
   );
 }
