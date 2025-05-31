@@ -14,6 +14,7 @@ import img10 from '../media/bcbf6e2d4470a4b1bdddfc0c251395847f355654.jpg';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css"; 
 import Slider from 'react-slick';
+import { Link } from 'react-router-dom';
 
 
 export default function TrendySection(){
@@ -35,65 +36,65 @@ export default function TrendySection(){
     
             <div className="cards-container flex">
                 <Slider {...settings}>
-                    <div className="card">
+                    <Link to='/podcast-details' className="card">
                         <img src={img1} alt=""/>
                         <h2>Not alone</h2>
                         <p>Podcast Description Lorem ipsum dolor sit amet</p>
-                    </div>
+                    </Link>
         
-                    <div className="card">
+                    <Link to='/podcast-details' className="card">
                         <img src={img2} alt=""/>
                         <h2>MM&M</h2>
                         <p>Podcast Description Lorem ipsum dolor sit amet</p>
-                    </div>
+                    </Link>
         
-                    <div className="card">
+                    <Link to='/podcast-details' className="card">
                         <img src={img3} alt=""/>
                         <h2>The SIP</h2>
                         <p>Podcast Description Lorem ipsum dolor sit amet</p>
-                    </div>
+                    </Link>
         
-                    <div className="card">
+                    <Link to='/podcast-details' className="card">
                         <img src={img4} alt=""/>
                         <h2>Family Business</h2>
                         <p>Podcast Description Lorem ipsum dolor sit amet</p>
-                    </div>
+                    </Link>
         
-                    <div className="card">
+                    <Link to='/podcast-details' className="card">
                         <img src={img5} alt=""/>
                         <h2>On Purpose</h2>
                         <p>Podcast Description Lorem ipsum dolor sit amet</p>
-                    </div>
+                    </Link>
         
-                    <div className="card">
+                    <Link to='/podcast-details' className="card">
                         <img src={img6} alt=""/>
                         <h2>Shane Dawson Pod </h2>
                         <p>Podcast Description Lorem ipsum dolor sit amet</p>
-                    </div>
+                    </Link>
         
-                    <div className="card">
+                    <Link to='/podcast-details' className="card">
                         <img src={img7} alt=""/>
                         <h2>Startalk</h2>
                         <p>Podcast Description Lorem ipsum dolor sit amet</p>
-                    </div>
+                    </Link>
         
-                    <div className="card">
+                    <Link to='/podcast-details' className="card">
                         <img src={img8} alt=""/>
                         <h2>The Album Years</h2>
                         <p>Podcast Description Lorem ipsum dolor sit amet</p>
-                    </div>
+                    </Link>
         
-                    <div className="card">
+                    <Link to='/podcast-details' className="card">
                         <img src={img9} alt=""/>
                         <h2>Ear Hustle</h2>
                         <p>Podcast Description Lorem ipsum dolor sit amet</p>
-                    </div>
+                    </Link>
         
-                    <div className="card">
+                    <Link to='/podcast-details' className="card">
                         <img src={img10} alt=""/>
                         <h2>That Sounds Fun</h2>
                         <p>Podcast Description Lorem ipsum dolor sit amet</p>
-                    </div>
+                    </Link>
 
                 </Slider>
                 

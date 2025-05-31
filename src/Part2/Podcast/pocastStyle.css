@@ -1,0 +1,329 @@
+:root{
+  --main-color:#f65c2a;
+  --second-color:#f57f41;
+  --black-color:#121517;
+  --white-color:#ffffff;
+}
+.all{
+    flex-direction: column;
+    gap: 3rem;
+}
+.home-section2{
+    position: relative;
+    width: 100%;
+    height: 40rem;
+    margin-top: 0;
+    display: flex;
+    align-items: flex-start;
+
+    .welcome-section{
+        position: relative;
+        background-image: url('../../media/9b30f2ea61a29ad6f18170d64f31f6136c8ca0cb.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.9); 
+        height: 14rem;
+        position: absolute;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        /* height: 100%; */
+        .description{
+            position: absolute;
+            top: 40%;
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+            align-items: end;
+            width: 100%;
+            margin: 1rem 2rem;
+            z-index: 2;
+
+            .img{
+                margin: 1rem 1rem;
+
+                img{
+                    max-width: 100%;
+                    height: auto;
+                    width:15rem;
+                    border-radius: 1rem;
+                    -webkit-border-radius: 1rem;
+                    -moz-border-radius: 1rem;
+                    -ms-border-radius: 1rem;
+                    -o-border-radius: 1rem;
+                }  
+            }
+
+            .text-description{
+                width: 65%;
+                color: var(--black-color);
+                margin: 1rem 1rem;
+
+                h1{
+                    font-size: 1.5rem;
+                    margin-bottom:0.5rem ;
+                }
+
+                p{
+                    margin-bottom:1.5rem ;
+                }
+
+                .list {
+                    list-style: none; 
+                    padding: 0;
+                    margin: 0;
+
+                    p {
+                        font-size: 1rem;
+                        position: relative;
+                        padding-left: .8rem; 
+                        margin-right: .6rem; 
+                    }
+
+                    p::before {
+                        content: "•"; 
+                        color: var(--main-color); 
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        line-height: 1;
+                    }
+
+                }
+            }
+
+            .quick-links-container{
+                position: absolute;
+                bottom: 0;
+                right: 4%;
+                left: 66%;
+                z-index: 2;
+                color: var(--white-color);
+                justify-content: center;
+
+                .quick-links{
+                    height: 4rem;
+                    width: 24rem;
+                    border-top-right-radius: 1rem;
+                    border-top-left-radius: 1rem;
+                    padding: 2rem;
+                    justify-content: space-between;
+
+                    .link-container{
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        .icon{
+                            padding: .3rem;
+                            font-size: 1.4rem;
+                            width: 60%;
+                            color: #aaa;
+                        }
+
+                        span{
+                            color: #aaa;
+                            font-size: .7rem;
+                        }
+                    }
+
+                    .icon-container{
+                        width: 45%;
+                        .icon{
+                            padding: .3rem;
+                            font-size: 3.5rem;
+                            width: 100%;
+                            color: var(--second-color);
+                        }
+                    }
+                }
+            }
+
+            .about-podcast{
+                position: relative;
+                width: 90%;
+                flex-wrap: wrap;
+                .text{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: end;
+                    width: 90%;
+                    justify-content: start;
+                    margin-bottom: 0.5rem ;
+                    h1{
+                        font-size: 1.4rem;
+                        margin-bottom: 0.5rem ;
+                        width: 100%;
+                    }
+
+                    p{
+                        text-align: start;
+                        font-size: 1.1rem;
+                    }
+
+                    .list {
+                        width: 70%;
+                        list-style: none; 
+                        padding: 0;
+                        margin: 0;
+                        font-size: 1.5rem;
+                        justify-content: space-between; 
+
+
+                    }
+                }
+
+                &::before{
+                    top: 100%;
+                    content: '';
+                    position: absolute;
+                    background: var(--second-color);
+                    width: 100%;
+                    height: 3px;
+                }
+            }
+
+            
+        }
+
+        
+      
+        &::before { 
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); 
+            z-index: 1;
+        }
+    }  
+
+}
+
+.trendy-section2{
+    position: relative;
+    flex-wrap: wrap;
+    margin: 1rem 2rem 3rem 2rem;
+    width: 90%;
+    .header{
+        margin-bottom: 1rem;
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        .more{
+            cursor: pointer;
+            color: var(--second-color);
+            li{
+                display: none;
+            }
+
+            span{
+                font-size: 1.2rem;
+            }
+        }
+
+    }
+
+    .cards-container{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 15px;
+        align-items: start;
+        .card{
+            color: black;
+            cursor: pointer;
+            flex: 0 0 auto; 
+            width: 10rem;
+            border-radius: 10px;
+            background: white;
+            
+            img{
+                width: 100%;
+                border-radius: 10px;
+                object-fit: cover;
+                border-radius: 10px 10px 0 0;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+            }
+
+            h2{
+                padding: .7rem 0;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+
+            p{
+                font-size: .7rem;
+                font-weight: 400;
+            }
+        }
+    }
+
+    &::before{
+        top: 100%;
+        content: '';
+        position: absolute;
+        background: var(--second-color);
+        width: 100%;
+        height: 3px;
+    }
+}
+
+
+@media screen and (max-width:870px){
+    .home-section2{
+        height: 50rem;
+    }
+}
+
+@media screen and (max-width:650px){
+    .home-section2{
+        height: 45rem;
+        .welcome-section{
+            .description{
+                .img{
+                    img{
+                        width: 13rem;
+                    }
+                }
+                .text-description{
+                    width: 80%;
+                    h1{
+                        font-size: 1.4rem;
+                    }
+
+                    .list{
+                        width: 100%;
+                        p{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                .quick-links-container{
+                    width: 50%;
+                    left: 50%;
+                }
+
+                .about-podcast{
+                    .text{
+                        width: 90%;
+                        p{
+                            font-size: .9rem;
+                        }
+
+                        .list{
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

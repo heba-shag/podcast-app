@@ -1,7 +1,7 @@
 
 import Footer from "./component/Footer";
 import Header from "./component/Header";
-import Navbar from "./component/Navbar";
+import LogNav from "./component/LogNav";
 import AboutUsSection from "./sections/AboutUsSection";
 import AdsSection from "./sections/AdsSection";
 import AudioBooks from "./sections/AudioBooks";
@@ -14,7 +14,7 @@ import TrendySection from "./sections/TrendySection";
 export default function HomePage(){
     return(
         <>
-        <Navbar/>
+        <LogNav/>
         <Header/>
         <TrendySection/>
         <TopPicks/>

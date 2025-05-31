@@ -20,6 +20,29 @@ export default function AudioBooks() {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+         responsive: [
+            {
+                breakpoint: 1024, // للشاشات المتوسطة (أيباد وغيرها)
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768, // للتابلات الصغيرة
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480, // للجوال
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     };
 
     return (
@@ -31,6 +54,7 @@ export default function AudioBooks() {
 
             <div className="cards-container flex">
                 <div className="row1 flex">
+                    
                     <Slider {...settings}>
                         <div>
                             <div className="card flex">

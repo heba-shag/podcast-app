@@ -7,7 +7,7 @@
 
 .navbar{
     width: 100%;
-    height: 6rem;
+    height: 4rem;
     background: var(--black-color);
     position: absolute;
     z-index: 1001;
@@ -18,7 +18,7 @@
     justify-content: space-around;
 
     .logo{
-        width: 15%;
+        width: 11%;
         justify-content: center;
         img{
             width: 100%;
@@ -33,23 +33,12 @@
         list-style: none;
         
         .link{
-            .icon{
-                display: none;
-            }
+            font-weight: 600;
+            color: var(--white-color);
 
-            a{
-                font-weight: 600;
-                color: var(--white-color);
-                text-decoration: none;
-            }
-
-            a:hover{
+            &:hover{
                 color: var(--main-color);
             }
-        }
-
-        .profile{
-            display: none;
         }
 
     }
@@ -125,8 +114,8 @@
         }
 
         img{
-            width: 5rem;
-            height: 5rem;
+            width: 3rem;
+            height: 3rem;
             border: .2rem solid var(--main-color);
             border-radius: 50%;
             -webkit-border-radius: 50%;
@@ -379,10 +368,12 @@
 
 
 .footer-section{
+    width: 100%;
     background: var(--black-color);
     color: var(--white-color);
     flex-wrap: wrap;
-    height: 14rem;
+    height: 8rem;
+    padding: 1rem;
     border-top-right-radius: 2rem;
     border-top-left-radius:2rem;
     justify-content: space-between;
@@ -397,50 +388,68 @@
         }
     }
 
-    .links{
-        width:85%;
-        list-style: none;
-        flex-wrap: wrap;
-
-        .aboutLinks,
-        .navLinks,
-        .onLinks{
-            width: 70%;
-            height: 70%;
-            font-size: 1.2rem;
-            padding: 1rem .3rem;
-            justify-content: space-between;
+    .links-container{
+        height: 90%;
+        justify-content: end;
+        width: 70%;
+        .links{
+            width:60%;
+            list-style: none;
             flex-wrap: wrap;
-            span{
-                width: 100%;
+
+            .aboutLinks,
+            .navLinks,
+            .onLinks{
+                width: 75%;
+                height: 70%;
+                font-size: .8rem;
+                padding: .5rem .3rem;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .link{
+                    color: var(--white-color);
+                    cursor: pointer;
+                }
+                span{
+                    width: 100%;
+                }
+            }
+
+            .onLinks{
+                justify-content: end!important;
+                .icon{
+                    font-size: 1.5rem;
+                    padding: 0 .2rem;
+                }
             }
         }
 
-        .onLinks{
-            justify-content: end!important;
-            .icon{
-                padding: 0 .2rem;
-            }
-        }
-    }
+        .apps-logos{
 
-    .apps-logos{
-        font-size: 1rem;
-        align-items: end;
-        height: 100%;
-        width: 35%;
-        margin-bottom: 2rem;
-        justify-content: space-around;
-        li{
-            color: var(--white-color);
-            .icon{
+            align-items: end;
+            height: 100%;
+            width: 35%;
+            margin-bottom: 2rem;
+            justify-content: space-around;
+            li{
                 cursor: pointer;
-                font-size: .8rem!important;
+                font-size: .7rem;
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                cursor: pointer;
+                .icon{
+                    cursor: pointer;
+                    font-size: .8rem!important;
+                }
+                
+                
             }
-            
-            
         }
+
     }
+
+    
 }
 
 @media screen and (max-width:1000px) {

@@ -12,6 +12,7 @@ import homePic4 from '../media/13ee52bcd851ae74b7abf2cc415363dac71bc160.jpg';
 import homePic5 from '../media/53c2d26402d321c820b7e06240b501ea05661961.jpg';
 
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 export default function Header(){
      const settings = {
@@ -121,19 +122,12 @@ export default function Header(){
                 </Slider>
             </div>
     
-            {/* <div className="swiper-container flex">
-                <div className="swiper flex">
-                    <span style={{color: "#f65c2a"}}>•</span>
-                    <span>•</span>
-                    <span>•</span>
-                </div>
-            </div> */}
     
             <div className="quick-links-container flex">
                 <div className="quick-links flex">
-                    <div className="link-container flex"><BiCategoryAlt className="icon"/><span>Categories</span></div>
+                    <div   className="link-container flex"><BiCategoryAlt className="icon"/><span>Categories</span></div>
                     <div className="link-container flex"><FcAudioFile className="icon"/><span>Audiobook</span></div>
-                    <div className="link-container flex"><GrNetwork className="icon"/><span>Network</span></div>
+                    <Link style={{color:'white'}} to='/community' className="link-container flex"><GrNetwork className="icon"/><span>Network</span></Link>
                 </div>
             </div>
         </div>

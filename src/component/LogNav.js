@@ -15,12 +15,11 @@ export default function LogNav(){
             </div>
     
             <div className="links flex">
-                <li className="link flex"><SiDiscover className='icon'/><a href="">Discover</a></li>
-                <li className="link flex"><CgCommunity className='icon'/><a href="">Community</a></li>
-                <li className="link flex"><BiLibrary className='icon'/><a href="">Library</a></li>
-                <li className="link flex profile"><CgProfile className='icon'/><a href="">Profile</a></li>
-                <li className="link flex about"><a href="">About</a></li>
-                <li className="link flex contact"><a href="">Contact</a></li>    
+                <Link to='/home-page' className="link flex">Discover</Link>
+                <Link to='/community' className="link flex">Community</Link>
+                <Link to='/library' className="link flex">Library</Link>
+                <Link to='/about-us' className="link flex">About</Link>
+                <Link to='/contact' className="link flex">Contact</Link>    
             </div>
     
             <div className="search flex">
