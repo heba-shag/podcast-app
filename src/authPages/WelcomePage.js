@@ -5,13 +5,10 @@ import { MdEmail } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../Context/Auth-context';
 export default function WelcomePage(){
-    const { login,logout } = useAuth(); 
+    const { logout } = useAuth(); 
         
     const handleLogout = () => {
         logout();
-    };
-    const handleLogin = () => {
-        login();
     };
     return(
         

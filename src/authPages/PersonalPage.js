@@ -34,6 +34,7 @@ import img29 from '../media/dae2a0bf4cf8890a78d7d094798be6e89c7d8a8d.jpg';
 import img30 from '../media/375e4901692a28078fad9f84bd3f4fcd2d41a096.png';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../Context/Auth-context';
+import { BiUserPlus } from 'react-icons/bi';
 
 export default function PersonalPage(){
     const { logout } = useAuth(); 
@@ -175,7 +176,7 @@ export default function PersonalPage(){
                 <div className="header flex">
                     <h1>Add your information</h1>
                     <p>Profile Picture</p>
-                    <li><i className="far fas fa-user-edit"></i></li>
+                    <li><BiUserPlus className='icon'/></li>
                 </div>
                 
                 <form className="flex" action="">
