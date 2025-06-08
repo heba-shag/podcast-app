@@ -33,8 +33,15 @@ import img28 from '../media/81d6668560cb1e609643ba1555bb00502f8d6962.jpg';
 import img29 from '../media/dae2a0bf4cf8890a78d7d094798be6e89c7d8a8d.jpg';
 import img30 from '../media/375e4901692a28078fad9f84bd3f4fcd2d41a096.png';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../Context/Auth-context';
 
 export default function PersonalPage(){
+    const { logout } = useAuth(); 
+    
+    const handleLogout = () => {
+        logout();
+    };
+
     return(
         <div className="personal-page flex">
             <div className='background flex'>
@@ -193,7 +200,7 @@ export default function PersonalPage(){
                             <span>Sign Up</span>
                         </Link>
 
-                        <Link to='/home-page' className="btn flex">
+                        <Link to='/home-page' onClick={handleLogout} className="btn flex">
                             <span>Skip</span>
                         </Link>
         

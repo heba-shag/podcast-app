@@ -8,7 +8,8 @@ import { AuthProvider } from './Context/Auth-context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/podcast-app">
+
     <AuthProvider>
       <App />
 

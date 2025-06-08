@@ -3,7 +3,16 @@ import logo from '../media/Logo.png'
 import { BsGoogle } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../Context/Auth-context';
 export default function WelcomePage(){
+    const { login,logout } = useAuth(); 
+        
+    const handleLogout = () => {
+        logout();
+    };
+    const handleLogin = () => {
+        login();
+    };
     return(
         
         <div className="welcome-page flex">
@@ -22,7 +31,7 @@ export default function WelcomePage(){
                         <span>Continue with Email</span>
                     </Link>
 
-                    <Link to='/home-page' style={{color:"white",background:"#f65c2a"}} className="btn flex" href="/index.html">
+                    <Link onClick={handleLogout} to='/home-page' style={{color:"white",background:"#f65c2a"}} className="btn flex" href="/index.html">
                         <span>Continue as a Guest</span>
                     </Link>
 

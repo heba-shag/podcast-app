@@ -7,11 +7,15 @@ import { RiCustomerService2Line } from 'react-icons/ri';
 import { MdEmail } from 'react-icons/md';
 import { BsInstagram } from 'react-icons/bs';
 import { FaFacebook } from 'react-icons/fa';
+import LogNav from '../component/LogNav';
+import { useAuth } from '../Context/Auth-context';
 
 export default function Contact(){
+    let loggedin=useAuth().isLoggedIn;
     return(
         <>
-            <Navbar/>
+            {loggedin===true&&(<Navbar/>)}
+            {loggedin===false&&(<LogNav/>)}
             <div className="contact-container flex">
                 <div className="pricing-header flex">
                     <h2 className="title flex">Contact</h2>

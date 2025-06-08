@@ -15,6 +15,8 @@ import img9 from '../media/375e4901692a28078fad9f84bd3f4fcd2d41a096.png';
 
 import './part2-style.css';
 import { FiFilter } from 'react-icons/fi';
+import LogNav from '../component/LogNav';
+import { useAuth } from '../Context/Auth-context';
 
 export default function Categories() {
   const [showFilterMenu, setShowFilterMenu] = useState(false);
@@ -22,6 +24,7 @@ export default function Categories() {
   const filterRef = useRef(null);
   const alphabetRef = useRef(null);
 
+    let loggedin=useAuth().isLoggedIn;
   const toggleFilterMenu = () => {
     setShowFilterMenu(!showFilterMenu);
     setShowAlphabetMenu(false);
@@ -49,7 +52,8 @@ export default function Categories() {
 
   return (
     <>
-      <Navbar />
+      {loggedin===true&&(<Navbar/>)}
+      {loggedin===false&&(<LogNav/>)}
       <div className="category-container flex">
         <div className="pricing-header flex">
           <h3 className="title">Browse</h3>

@@ -7,7 +7,7 @@ export function AuthProvider({ children }) {
 
     const login = () => setIsLoggedIn(true);
     const logout = () => setIsLoggedIn(false);
-
+    console.log(isLoggedIn);
     return (
         <AuthContext.Provider value={{ isLoggedIn, login, logout }}>
             {children}

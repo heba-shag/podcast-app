@@ -29,7 +29,6 @@ function App() {
   return (
     <div >
       <Routes>
-
         <Route path="/" element={<PersonalPage />} />
         <Route path="/welcome-page" element={<WelcomePage />} />
         <Route path="/home-page" element={<HomePage />} />
@@ -54,11 +53,6 @@ function App() {
         <Route path='/order-history' element={<Order/>}/>
         <Route path='/switch-account' element={<Switch/>}/>
         <Route path='/podcast-details' element={<HomePage2/>}/>
-
-
-
-
-        
       </Routes>
     </div>
   );

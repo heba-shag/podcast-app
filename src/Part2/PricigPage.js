@@ -1,12 +1,16 @@
 import Footer from '../component/Footer';
+import LogNav from '../component/LogNav';
 import Navbar from '../component/Navbar';
+import { useAuth } from '../Context/Auth-context';
 
 import './part2-style.css';
 
 export default function PricingPage(){
+    let loggedin=useAuth().isLoggedIn;
     return(
         <>
-            <Navbar/>
+            {loggedin===true&&(<Navbar/>)}
+            {loggedin===false&&(<LogNav/>)}
             <div className="pricing-container flex">
                 <div className="pricing-header flex">
                     <button className="btn">Annual (save 20%)</button>

@@ -1,7 +1,9 @@
 
+import { use, useContext } from "react";
 import Footer from "./component/Footer";
 import Header from "./component/Header";
 import LogNav from "./component/LogNav";
+import { AuthProvider, useAuth } from "./Context/Auth-context";
 import AboutUsSection from "./sections/AboutUsSection";
 import AdsSection from "./sections/AdsSection";
 import AudioBooks from "./sections/AudioBooks";
@@ -10,11 +12,14 @@ import EducationSection from "./sections/EducationSection";
 import EntertainmentSection from "./sections/EntertainmentSection";
 import TopPicks from "./sections/TopPicks";
 import TrendySection from "./sections/TrendySection";
+import Navbar from "./component/Navbar";
 
 export default function HomePage(){
+    let loggedin=useAuth().isLoggedIn;
     return(
         <>
-        <LogNav/>
+        {loggedin===true&&(<Navbar/>)}
+        {loggedin===false&&(<LogNav/>)}
         <Header/>
         <TrendySection/>
         <TopPicks/>

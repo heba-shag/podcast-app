@@ -13,13 +13,16 @@ import img8 from '../media/dae2a0bf4cf8890a78d7d094798be6e89c7d8a8d.jpg';
 import img9 from '../media/375e4901692a28078fad9f84bd3f4fcd2d41a096.png';
 
 import './part2-style.css';
+import LogNav from '../component/LogNav';
+import { useAuth } from '../Context/Auth-context';
 
 export default function Library() {
-
+  let loggedin=useAuth().isLoggedIn;
 
   return (
     <>
-      <Navbar />
+      {loggedin===true&&(<Navbar/>)}
+      {loggedin===false&&(<LogNav/>)}
       <div className="library-container flex">
         <div className="pricing-header flex">
           <h3 className="title">Library</h3>

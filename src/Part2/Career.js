@@ -6,13 +6,16 @@ import Navbar from '../component/Navbar';
 import './part2-style.css';
 import { FiFilter } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../Context/Auth-context';
+import LogNav from '../component/LogNav';
 
 export default function Career() {
-  
+    let loggedin=useAuth().isLoggedIn;
   return (
     <>
-      <Navbar />
-      <div className="career-container flex">
+    {loggedin===true&&(<Navbar/>)}
+    {loggedin===false&&(<LogNav/>)}
+    <div className="career-container flex">
         <div className="main-section flex">
             <div className='text-section flex'>
                 <h1 className="title">Join Us!</h1>
@@ -206,8 +209,8 @@ export default function Career() {
             </div>
         </div>
         
-      </div>
-      <Footer />
+    </div>
+    <Footer />
     </>
   );
 }
