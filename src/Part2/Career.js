@@ -1,20 +1,13 @@
-import { useState, useRef, useEffect } from 'react';
-import { BiCategoryAlt } from 'react-icons/bi';
 import Footer from '../component/Footer';
 import Navbar from '../component/Navbar';
 
 import './part2-style.css';
-import { FiFilter } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import { useAuth } from '../Context/Auth-context';
-import LogNav from '../component/LogNav';
 
 export default function Career() {
-    let loggedin=useAuth().isLoggedIn;
   return (
     <>
-    {loggedin===true&&(<Navbar/>)}
-    {loggedin===false&&(<LogNav/>)}
+    <Navbar/>
     <div className="career-container flex">
         <div className="main-section flex">
             <div className='text-section flex'>

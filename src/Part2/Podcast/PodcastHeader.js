@@ -9,8 +9,8 @@ import { FaCloudArrowDown, FaRegBookmark } from 'react-icons/fa6';
 export default function PodcatHeader(){
 
     return(
-        <div className="home-section2 flex section">
-            <div className="welcome-section">
+        <div className="home-section2 flex ">
+            <div className="welcome-section ">
                 <div className="description flex">
                     <div className="img">
                         <img src={homePic1} alt=""/>

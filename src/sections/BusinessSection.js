@@ -14,6 +14,7 @@ import img10 from '../media/bcbf6e2d4470a4b1bdddfc0c251395847f355654.jpg';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css"; 
 import Slider from 'react-slick';
+import { IoIosArrowForward } from 'react-icons/io';
 
 export default function BusinessSection(){
 
@@ -30,7 +31,7 @@ export default function BusinessSection(){
         <div className="business-section section flex">
             <div className="header flex">
                 <h2 className="title">Business</h2>
-                <h3 className="more"><li className="fas fas fa-chevron-right"></li><span>More</span></h3>
+                <h3 className="more"><IoIosArrowForward className='icon' /><span>More</span></h3>
             </div>
     
             <div className="cards-container flex">

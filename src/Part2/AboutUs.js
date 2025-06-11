@@ -1,16 +1,12 @@
 import Footer from '../component/Footer';
-import LogNav from '../component/LogNav';
 import Navbar from '../component/Navbar';
-import { useAuth } from '../Context/Auth-context';
 import './part2-style.css';
 import { BiPlayCircle } from 'react-icons/bi';
 
 export default function AboutUs(){
-    let loggedin=useAuth().isLoggedIn;
     return(
         <>
-            {loggedin===true&&(<Navbar/>)}
-            {loggedin===false&&(<LogNav/>)}
+            <Navbar/>
             <div className="aboutUs-container flex">
                 <div className="header flex">
                     <h2 className="title flex">About Us</h2>

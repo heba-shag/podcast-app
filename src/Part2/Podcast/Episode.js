@@ -5,16 +5,17 @@ import homePic1 from '../../media/9b30f2ea61a29ad6f18170d64f31f6136c8ca0cb.png';
 import { Link } from 'react-router-dom';
 import { BiCategory } from 'react-icons/bi';
 import { IoOptions } from 'react-icons/io5';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 
 export default function Episode(){
     return(
-        <div className="trendy-section2 section flex">
+        <div className="episode-section section flex">
             <div className="header flex">
                 <h2 className="title">Episodes</h2>
-                <div style={{width:'20%',justifyContent:'space-between'}} className='flex'>
-                    <h3 className="more"><BiCategory/><span>Oldest</span></h3>
-                    <h3 className="more"><IoOptions/><span>Options</span></h3>
+                <div style={{width:'20%',justifyContent:'space-between',padding:'0 .9rem'}} className='flex'>
+                    <span className="more"><BiCategory/>Oldest</span>
+                    <span className="more"><IoOptions/>Options</span>
                 </div>   
             </div>
     
@@ -108,6 +109,8 @@ export default function Episode(){
             <div className="header flex">
                 <h3 style={{width:'100%',justifyContent:'center',marginTop:'1rem'}} className="more flex"><span>Show more</span></h3>
             </div>
+
+           
         </div>
     )
 }

@@ -1,26 +1,36 @@
- .trendy-section,
+.trendy-section,
 .education-section,
 .entertainment-section,
 .business-section{
     flex-wrap: wrap;
-    margin: 1rem 2rem 3rem 2rem;
-    height: 19rem;
+    margin: 1rem clamp(1rem, 3vw, 2rem) 3rem clamp(1rem, 3vw, 2rem);
+    height: auto;
+    box-sizing: border-box;
 
     .header{
         margin-bottom: 1rem;
         width: 100%;
         flex-wrap: nowrap;
         justify-content: space-between;
+        align-items: center;
+
+        .title{
+            font-size: clamp(1.2rem, 2vw, 1.5rem);
+        }
 
         .more{
             cursor: pointer;
             color: var(--second-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
             li{
                 display: none;
+                font-size: 0.8rem;
             }
 
             span{
-                font-size: 1.2rem;
+                font-size: clamp(1rem, 1.5vw, 1.2rem);
             }
         }
 
@@ -28,66 +38,91 @@
 
     .cards-container{
         width: 100%;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        overflow-y: hidden;
-        justify-content: start;
-        gap: 20px;
-        height: 17rem;
-        align-items: start;
+        height: auto;
+        overflow: hidden;
         .card{
             color: black;
             cursor: pointer;
-            flex: 0 0 auto; 
-            width: 10rem;
+            width: 100%;
+            height: 100%;
             border-radius: 10px;
             background: white;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
             
             img{
                 width: 100%;
-                border-radius: 10px;
+                aspect-ratio: 1/1;
                 object-fit: cover;
                 border-radius: 10px 10px 0 0;
-                -webkit-border-radius: 10px;
-                -moz-border-radius: 10px;
-                -ms-border-radius: 10px;
-                -o-border-radius: 10px;
             }
 
             h2{
-                padding: .7rem 0;
-                font-size: 1rem;
+                padding: 0.7rem 0.5rem 0.3rem;
+                font-size: clamp(0.8rem, 1.5vw, 1rem);
                 font-weight: 500;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin: 0;
             }
 
             p{
-                font-size: .7rem;
+                padding: 0 0.5rem 0.7rem;
+                font-size: clamp(0.6rem, 1.2vw, 0.7rem);
                 font-weight: 400;
+                margin: 0;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+
+            &:hover{
+                transform: translateY(-5px);
+                -webkit-transform: translateY(-5px);
+                -moz-transform: translateY(-5px);
+                -ms-transform: translateY(-5px);
+                -o-transform: translateY(-5px);
             }
         }
+
+        
     }
 }
 
 .top-picks-section{
     flex-wrap: wrap;
-    margin: 1rem 2rem 3rem 2rem;
-    height: 15rem;
+    margin: 1rem clamp(1rem, 3vw, 2rem) 3rem clamp(1rem, 3vw, 2rem);
+    height: auto;
+    box-sizing: border-box;
 
     .header{
-        margin-bottom: .1rem;
+        margin-bottom: 0.1rem;
         width: 100%;
+        display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
+        align-items: center;
+
+        .title{
+            font-size: clamp(1.2rem, 2vw, 1.5rem);
+        }
 
         .more{
             cursor: pointer;
             color: var(--second-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
             li{
                 display: none;
+                font-size: 0.8rem;
             }
 
             span{
-                font-size: 1.2rem;
+                font-size: clamp(1rem, 1.5vw, 1.2rem);
             }
         }
 
@@ -95,54 +130,55 @@
 
     .cards-container{
         width: 100%;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        overflow-y: hidden;
-        justify-content: start;
-        gap: 20px;
-        height: 12rem;
-        align-items: start;
+        height: auto;
+        overflow: hidden;
 
         .card{
             color: black;
             cursor: pointer;
-            height: 100%;
             width: 100%;
+            height: 100%;
             background: #ddd;
-            padding: 1rem;
-            flex: 0 0 auto;
+            padding: clamp(0.8rem, 2vw, 1rem);
             border-radius: 10px;
-            align-items: start;
-            justify-content: start;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            transition: transform 0.3s ease;
             
             img{
-                width: 9rem;
-                border-radius: 10px;
+                width: clamp(6rem, 20vw, 9rem);
+                height: auto;
+                aspect-ratio: 1/1;
                 object-fit: cover;
-                border-radius: 10px 10px 0 0;
-                -webkit-border-radius: 10px;
-                -moz-border-radius: 10px;
-                -ms-border-radius: 10px;
-                -o-border-radius: 10px;
+                border-radius: 10px;
             }
 
             .text-container{
-                margin-left: 1rem;
+                margin-left: clamp(0.5rem, 2vw, 1rem);
                 width: 100%;
-                /* display: flex; */
 
                 h2{
-                    padding: .7rem 0;
-                    font-size: 1.6rem;
+                    padding: 0.3rem 0;
+                    font-size: clamp(1rem, 2vw, 1.6rem);
                     font-weight: 600;
+                    margin: 0;
                 }
     
                 p{
-                    font-size: 1.1rem;
+                    font-size: clamp(0.8rem, 1.5vw, 1.1rem);
                     font-weight: 300;
+                    margin: 0;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
                 }
             }
            
+            &:hover {
+                transform: translateY(-5px);
+            }
         }
 
     }
@@ -160,23 +196,34 @@
 
 .audiobooks-section{
     flex-wrap: wrap;
-    margin: 1rem 2rem 3rem 2rem;
-    height: 20rem;
+    margin: 1rem clamp(1rem, 3vw, 2rem) 3rem clamp(1rem, 3vw, 2rem);
+    height: auto;
+    box-sizing: border-box;
     .header{
-        margin-bottom: .1rem;
+        margin-bottom: 0.1rem;
         width: 100%;
+        display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
+        align-items: center;
+
+        .title {
+            font-size: clamp(1.2rem, 2vw, 1.5rem);
+        }
 
         .more{
             cursor: pointer;
             color: var(--second-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
             li{
                 display: none;
             }
 
             span{
-                font-size: 1.2rem;
+                font-size: clamp(1rem, 1.5vw, 1.2rem);
             }
         }
 
@@ -184,75 +231,81 @@
 
     .cards-container{
         width: 100%;
-        flex-wrap: wrap;
-        overflow-x: auto;
-        overflow-y: visible;
-        justify-content: start;
-        /* height: 12rem; */
-        align-items: start;
+        height: auto;
+        overflow: hidden;
+        flex-direction: column;
         .row1,.row2{ 
             width: 100%;
-            flex-wrap: nowrap;
-            gap: 20px;
-            height: 40%;
-            margin-bottom: 1rem;
+            height: auto;
+            margin-bottom: clamp(0.5rem, 2vw, 1rem);
             .card{
                 cursor: pointer;
                 color: black;
                 position: relative;
-                height: 100%;
                 width: 100%;
+                height: 100%;
                 background: #ddd;
-                padding: .7rem .5rem;
-                flex: 0 0 auto;
+                padding: clamp(0.5rem, 1.5vw, 0.7rem) clamp(0.4rem, 1.2vw, 0.5rem);
                 border-radius: 10px;
-                align-items: start;
-                justify-content: start;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
                 box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;
                 img{
-                    width: 5rem;
+                    width: clamp(4rem, 12vw, 5rem);
+                    height: auto;
+                    aspect-ratio: 1/1;
+                    object-fit: cover;
                     border-radius: 10px;
-                    object-fit: cover;
-                    border-radius: 10px 10px 0 0;
-                    -webkit-border-radius: 10px;
-                    -moz-border-radius: 10px;
-                    -ms-border-radius: 10px;
-                    -o-border-radius: 10px;
-                    object-fit: cover;
                 }
     
                 .text-container{
-                    margin-left: 1rem;
+                    margin-left: clamp(0.5rem, 2vw, 1rem);
                     width: 100%;
     
                     h2{
-                        font-size: .8rem;
+                        font-size: clamp(0.7rem, 1.5vw, 0.8rem);
                         font-weight: 600;
+                        margin: 0;
                     }
         
                     p{
-                        width: 50%;
-                        margin: .5rem 0;
-                        font-size: .7rem;
+                        width: 100%;
+                        margin: clamp(0.3rem, 1vw, 0.5rem) 0;
+                        font-size: clamp(0.6rem, 1.2vw, 0.7rem);
                         font-weight: 300;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
                     }
 
                     ul{
                         display: flex;
                         justify-content: space-between;
+                        flex-wrap: wrap;
+                        gap: 0.3rem;
+                        margin: 0;
+                        padding: 0;
                         li{
                             list-style: none;
-                            font-size: .7rem;
+                            font-size: clamp(0.5rem, 1.1vw, 0.7rem);
+                            white-space: nowrap;
                         }
                     }
                 }
 
                 .icon{
                     position: absolute;
-                    top: .7rem;
-                    font-size: 1.5rem;
-                    right: 1rem;
+                    top: clamp(0.5rem, 1.5vw, 0.7rem);
+                    font-size: clamp(1rem, 3vw, 1.5rem);
+                    right: clamp(0.5rem, 2vw, 1rem);
                     color: var(--main-color);
+                }
+
+                &:hover {
+                    transform: translateY(-5px);
                 }
             
             }
@@ -265,26 +318,36 @@
 
 .aboutUs-section{
     flex-wrap: wrap;
-    margin: 1rem 2rem 3rem 2rem;
-    height: 20rem;
+    margin: 1rem clamp(1rem, 3vw, 2rem) 3rem clamp(1rem, 3vw, 2rem);
+    height: auto;
+    box-sizing: border-box;
     .header{
-        margin-bottom: .1rem;
+        margin-bottom: 0.1rem;
         width: 100%;
+        display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
+        
+        .title{
+            font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+        }
     }
 
     .cards-container{
-        padding: 1.2rem 0;
+        padding: clamp(0.8rem, 2vw, 1.2rem) 0;
         height: 100%;
+        display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
 
         p{
-            font-size: 1.2rem;
+            font-size: clamp(0.9rem, 1.5vw, 1.2rem);
             height: 100%;
-            padding:.2rem;
+            padding: 0.2rem;
             width: 50%;
+            margin: 0;
+            line-height: 1.6;
         }  
     
         .img{
@@ -294,19 +357,34 @@
             background-position: center;
             background-color: rgba(0, 0, 0, 0.9);
             width: 43%;
-            height: 100%;
+            height: 15rem;
             filter: blur(3px);
+            display: flex;
             justify-content: center;
+            align-items: center;
             border-radius: 2rem;
-            -webkit-border-radius: 2rem;
-            -moz-border-radius: 2rem;
-            -ms-border-radius: 2rem;
-            -o-border-radius: 2rem;
-            -webkit-filter: blur(3px);
+            position: relative;
+            overflow: hidden;
 
             .icon{
-                font-size: 3rem;
+                font-size: clamp(2rem, 6vw, 3rem);
                 color: orange;
+                z-index: 1;
+                transition: transform 0.3s ease;
+            }
+
+            &:hover{
+                transform: scale(1.1);
+            }
+
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.3);
             }
         }
     }
@@ -319,13 +397,15 @@
 }
 
 .slick-list {
-  overflow: visible; 
-  padding: 10px 0 !important;
+    overflow: visible; 
+    padding: 10px 0 !important;
+    margin: 0 -10px;
 }
 
 .slick-slide {
   padding: 0 10px;
   box-sizing: border-box;
+    height: auto;
 }
 
 .slick-slide > div {
@@ -338,13 +418,180 @@
   max-width: 1200px; 
 }
 
-@media screen and (max-device-width:550px){ 
-  
-    .aboutUs-section{
-        p{
-            overflow: auto;
+/* Responsive Settings */
+@media (max-width: 992px) {
+    .trendy-section,
+    .education-section,
+    .entertainment-section,
+    .business-section,
+    .top-picks-section,
+    .audiobooks-section{
+        .header{
+            .more{
+                span{
+                    display: none;
+                }
+
+                li {
+                    display: block;
+                }
+            }
         }
+
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .slick-slide {
+        padding: 0 6px;
+    }
+    
+    .trendy-section,
+    .education-section,
+    .entertainment-section,
+    .business-section{
+        .cards-container{
+            .card{
+                h2{
+                    padding: 0.5rem 0.4rem 0.2rem;
+                }
+                p {
+                    padding: 0 0.4rem 0.5rem;
+                }
+            }
+        }
+    } 
+
+    .top-picks-section{
+        .header{
+            .more{
+                span {
+                    display: none;
+                }
+
+                li {
+                    display: block;
+                }
+            }
+        }
+
+        .cards-container{
+            .card {
+                flex-direction: column;
+                align-items: center;
+                img {
+                    width: 100%;
+                    margin-bottom: 0.5rem;
+                }
+
+                .text-container {
+                    margin-left: 0;
+                    text-align: center;
+                }
+            }
+        } 
+    }  
+    
+    
+    .audiobooks-section{
+        .cards-container{
+            .row1,.row2{
+                .card {
+                    flex-direction: column;
+                    align-items: center;
+
+                    img {
+                        width: 100%;
+                        margin-bottom: 0.5rem;
+                    }
+
+                    .text-container {
+                        margin-left: 0;
+                        text-align: center;
+                        ul {
+                            justify-content: space-around!important;
+                        }
+                    }
+                }
+            }
+            
+        } 
+    } 
+
+    .aboutUs-section{
+        .cards-container {
+            flex-direction: column;
+            gap: 2rem;
+
+            p,.img {
+                width: 100%;
+                height: auto;
+            }
+
+            .img{
+                min-height: 15rem;
+            }
+        }
+
+    } 
+    
+}
+
+@media (max-width: 576px) {
+    .trendy-section,
+    .education-section,
+    .entertainment-section,
+    .business-section {
+        margin: 1rem 0.5rem 2rem;
+    }
+    
+    .slick-slide {
+        padding: 0 4px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .top-picks-section {
+        margin: 1rem 0.5rem 2rem;
+
+        .cards-container{
+            .card {
+                padding: 0.8rem;
+            }
+        } 
+    }
+    
+    .audiobooks-section {
+        margin: 1rem 0.5rem 2rem;
+
+        .cards-container{
+            .row1,.row2{
+                .card {
+                    padding: 0.6rem;
+                    .text-container{
+                        h2 {
+                            font-size: 0.8rem;
+                        }
+
+                        p {
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+            }
+            
+        } 
     }
 
+    .aboutUs-section {
+        .cards-container{
+            p {
+                font-size: 1rem;
+            }
+        } 
+        margin: 1rem 0.8rem 2rem;
+    }
     
 }

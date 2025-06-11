@@ -37,12 +37,15 @@ import { useAuth } from '../Context/Auth-context';
 import { BiUserPlus } from 'react-icons/bi';
 
 export default function PersonalPage(){
-    const { logout } = useAuth(); 
+    const { logout,login } = useAuth(); 
     
     const handleLogout = () => {
         logout();
     };
 
+    const handleLogin = () => {
+        login();
+    };
     return(
         <div className="personal-page flex">
             <div className='background flex'>
@@ -197,7 +200,7 @@ export default function PersonalPage(){
 
                     <div className="btns flex">
 
-                        <Link to='/welcome-page' style={{color: "white",background:" #f65c2a"}} class="btn flex">
+                        <Link to='/home-page' onClick={handleLogin} style={{color: "white",background:" #f65c2a"}} class="btn flex">
                             <span>Sign Up</span>
                         </Link>
 

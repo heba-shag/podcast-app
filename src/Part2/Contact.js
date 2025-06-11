@@ -2,20 +2,14 @@ import { CiLocationOn } from 'react-icons/ci';
 import Footer from '../component/Footer';
 import Navbar from '../component/Navbar';
 import './part2-style.css';
-import { BiPlayCircle } from 'react-icons/bi';
 import { RiCustomerService2Line } from 'react-icons/ri';
 import { MdEmail } from 'react-icons/md';
 import { BsInstagram } from 'react-icons/bs';
 import { FaFacebook } from 'react-icons/fa';
-import LogNav from '../component/LogNav';
-import { useAuth } from '../Context/Auth-context';
-
 export default function Contact(){
-    let loggedin=useAuth().isLoggedIn;
     return(
         <>
-            {loggedin===true&&(<Navbar/>)}
-            {loggedin===false&&(<LogNav/>)}
+            <Navbar/>
             <div className="contact-container flex">
                 <div className="pricing-header flex">
                     <h2 className="title flex">Contact</h2>

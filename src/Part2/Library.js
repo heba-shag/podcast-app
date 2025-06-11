@@ -13,16 +13,11 @@ import img8 from '../media/dae2a0bf4cf8890a78d7d094798be6e89c7d8a8d.jpg';
 import img9 from '../media/375e4901692a28078fad9f84bd3f4fcd2d41a096.png';
 
 import './part2-style.css';
-import LogNav from '../component/LogNav';
-import { useAuth } from '../Context/Auth-context';
-
 export default function Library() {
-  let loggedin=useAuth().isLoggedIn;
 
   return (
     <>
-      {loggedin===true&&(<Navbar/>)}
-      {loggedin===false&&(<LogNav/>)}
+      <Navbar/>
       <div className="library-container flex">
         <div className="pricing-header flex">
           <h3 className="title">Library</h3>
@@ -30,7 +25,7 @@ export default function Library() {
 
         <div className="category-cards flex">
           <div className="header flex">
-            <h2 className="charts flex" style={{color: '#bbb',fontSize:'1.4rem'}}><span style={{ color: '#111',fontSize:'1.6rem' }}>Search</span> Search favorite</h2>
+            <h2 className="charts flex" style={{color: '#bbb',fontSize:'1.4rem'}}><span style={{ color: '#111',fontSize:'1.6rem' }}>Search</span><input type='text' placeholder='Search favorite' /> </h2>
           </div>
 
           <div  className="cards-container flex">

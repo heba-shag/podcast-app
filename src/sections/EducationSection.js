@@ -14,6 +14,7 @@ import img10 from '../media/375e4901692a28078fad9f84bd3f4fcd2d41a096.png';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css"; 
 import Slider from 'react-slick';
+import { IoIosArrowForward } from 'react-icons/io';
 
 export default function EducationSection(){
     const settings = {
@@ -29,7 +30,7 @@ export default function EducationSection(){
         <div className="education-section section flex">
             <div className="header flex">
                 <h2 className="title">Education</h2>
-                <h3 className="more"><li className="fas fas fa-chevron-right"></li><span>More</span></h3>
+                <h3 className="more"><IoIosArrowForward className='icon' /><span>More</span></h3>
             </div>
     
             <div className="cards-container flex">

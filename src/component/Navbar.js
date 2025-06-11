@@ -1,22 +1,31 @@
 import { useState } from 'react';
-import { BiLibrary, BiSearch } from 'react-icons/bi';
+import { BiSearch, BiMenu, BiX } from 'react-icons/bi';
 import './components-style.css';
-import { SiDiscover } from 'react-icons/si';
-import { CgCommunity, CgProfile } from 'react-icons/cg';
-
 import logo from '../media/Logo.png';
 import user from '../media/3da6f6f31617de9200981ac97599356c6b4d3893.jpg';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../Context/Auth-context';
 
 export default function Navbar() {
+    let loggedin=useAuth().isLoggedIn;
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
 
     return (
         <div className="navbar flex">
+
+            <div className="mobile-menu-btn" onClick={toggleMenu}>
+                {isMenuOpen ? <BiX className='icon' /> : <BiMenu className='icon' />}
+            </div>
+
             <div className="logo flex">
                 <img src={logo} alt=""/>
             </div>
-    
-            <div className="links flex">
+
+            <div className={`links flex ${isMenuOpen ? 'mobile-menu-open' : ''}`}>
                 <Link to='/home-page' className="link flex">Discover</Link>
                 <Link to='/community' className="link flex">Community</Link>
                 <Link to='/library' className="link flex">Library</Link>
@@ -25,14 +34,17 @@ export default function Navbar() {
             </div>
     
             <div className="search flex">
-                
-                <Link to='/search'><BiSearch className='icon' /></Link>
-                <Link className='flex' style={{cursor:'pointer'}} to='/profile-information'>
-                    <h2 className="user-name">Anna Liebert</h2>
-                    <img src={user} alt=""/>
-                </Link>
-                
+                {loggedin===true&&<>
+                    <Link to='/search'><BiSearch className='icon' /></Link>
+                    <Link className='user-details flex' style={{cursor:'pointer'}} to='/profile-information'>
+                        <h2 className="user-name">Anna Liebert</h2>
+                        <img src={user} alt=""/>
+                    </Link>
+                </>}
+                {loggedin===false&&<Link to='/welcome-page' class="btn" >Log in</Link>}
             </div>
+            
+            
         </div>
     )
 }

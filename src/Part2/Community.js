@@ -11,15 +11,10 @@ import profile1 from '../media/b734229040265dd4a19da4578cd9ecc07e5dbd1d.jpg';
 import profile2 from '../media/62f2371fc43e7be5bd51f6cec2a1e655a3d0f520.jpg';
 
 import './part2-style.css';
-import LogNav from '../component/LogNav';
-import { useAuth } from '../Context/Auth-context';
-
 export default function Community() {
-    let loggedin=useAuth().isLoggedIn;
   return (
     <>
-      {loggedin===true&&(<Navbar/>)}
-      {loggedin===false&&(<LogNav/>)} 
+      <Navbar/> 
       <div className="community-container flex">
         <div className="header-pic flex">
             <img src={spotify} alt=''/>

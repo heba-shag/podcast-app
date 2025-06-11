@@ -10,10 +10,10 @@ export default function Login() {
         login();
     };
 
-    console.log(login);
 
     return(
         <div className="log-in flex">
+
             <div className="logo flex">
                 <img src={img1} alt=""/>
             </div>

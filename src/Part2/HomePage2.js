@@ -1,22 +1,19 @@
 
 import Footer from "../component/Footer";
-import LogNav from "../component/LogNav";
 import Navbar from "../component/Navbar";
-import { useAuth } from "../Context/Auth-context";
 import Episode from "./Podcast/Episode";
+import More from "./Podcast/More";
 import PodcatHeader from "./Podcast/PodcastHeader";
+import Similar from "./Podcast/Similar";
 export default function HomePage2(){
-    let loggedin=useAuth().isLoggedIn;
     
     return(
         <>
-        {loggedin===true&&(<Navbar/>)}
-        {loggedin===false&&(<LogNav/>)}
-            <div className="all flex">
-                <PodcatHeader/>
-                <Episode/>
-            </div>
-        
+        <Navbar/>
+        <PodcatHeader/>
+        <Episode/>
+        <Similar/>
+        <More/>
         <Footer/>
         </>
     )

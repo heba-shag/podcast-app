@@ -1,15 +1,14 @@
-import './sectionsStyle.css';
+import './pocastStyle.css';
 
-import img1 from '../media/e31e56bb26eb03a699ac8e4ea41fd11a740175e7.jpg';
-import img2 from '../media/79f237da92fdf400f628f5c625d1956a386b23e2.jpg';
-import img3 from '../media/4f2ac475f6e34f45c2e676558da7dd48ba7fe9ce.jpg';
+import img1 from '../../media/e31e56bb26eb03a699ac8e4ea41fd11a740175e7.jpg';
+import img2 from '../../media/79f237da92fdf400f628f5c625d1956a386b23e2.jpg';
+import img3 from '../../media/4f2ac475f6e34f45c2e676558da7dd48ba7fe9ce.jpg';
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css"; 
 import Slider from 'react-slick';
-import { IoIosArrowForward } from 'react-icons/io';
 
-export default function TopPicks(){
+export default function More(){
     const settings = {
         dots: false,
         infinite: true,
@@ -29,10 +28,9 @@ export default function TopPicks(){
         ]
     };
     return(
-        <div className="top-picks-section section flex">
+        <div className="top-picks-section2 flex">
             <div className="header flex">
-                <h2 className="title">Top Picks</h2>
-                <h3 className="more"><IoIosArrowForward className='icon' /><span>More</span></h3>
+                <h2 className="title"> More From Author</h2>
             </div>
     
             <div className="cards-container flex">

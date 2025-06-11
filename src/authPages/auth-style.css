@@ -560,22 +560,107 @@
     
 }
 
+@media screen and (max-width:768px) {
+    .personal-page{
+        .img{
+            width: 60%;
+        }
+    }
 
-@media screen and (max-device-width:550px){ 
-
-    /* welcomePage */
     .welcome-page{
         .img{
-            width: 100%;
+            width: 70%;
+            h1{
+                font-size: 1rem;
+            }
+
+            p{
+                font-size: .8rem;
+                span{
+                    font-size: .8rem;
+                }
+            }
             .btns{
-                .btn{
-                    span{
-                        font-size: 1.1rem;
+                width: 50%;
+               
+            }
+        }
+    }
+
+    .signUp-page,
+    .log-in {
+        .logo,.line{
+            display: none;
+        }
+
+        .img{
+            width: 100%;
+            height: 100%;
+
+            h1{
+                font-size: 1.4rem;
+            }
+
+            form{
+                height: 80%;
+
+                .box{
+                    width: 60%;
+
+                    label{
+                        font-size: 1rem;
+                    }
+
+                    input{
+                        height: 4rem;
+                    }
+                }
+
+                .btns{
+                    width: 60%;
+                    .btn{
+                        height: 4rem;
+                        span{
+                            font-size: 1.4rem;
+                        }
+                    }
+
+                    .login{
+                        p{
+                            font-size: 1.3rem;
+                            span{
+                                color: var(--main-color);
+                                font-size: 1.3rem;
+                                width: 100%;
+                            }
+                        }
                     }
                 }
             }
         }
+
     }
+    
+}
+
+@media screen and (max-width:480px) {
+    .personal-page{
+        .img{
+            width: 100%;
+        }
+    }
+
+    .welcome-page{
+        .img{
+            width: 100%;
+            
+        }
+    }
+
+    
+}
+@media screen and (max-device-width:550px){ 
+
 
     /* sign up */
     .signUp-page,

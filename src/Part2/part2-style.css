@@ -229,6 +229,12 @@
           padding-right: 2rem;
           font-size: 1rem;
         }
+        input{
+          width: 100%;
+          outline: none;
+          border: none;
+          padding: .2rem;
+        }
       } 
 
       &::before{
@@ -489,7 +495,7 @@
 
 /* community page */
 .community-container{
-  margin: 6rem 0;
+  margin-bottom: 2rem ;
   flex-direction: column;
   gap: 2rem;
   width: 100%;
@@ -1069,6 +1075,13 @@
         span{
           padding-right: 2rem;
           font-size: 1rem;
+        }
+
+        input{
+          width: 100%;
+          outline: none;
+          border: none;
+          padding: .2rem;
         }
       } 
 

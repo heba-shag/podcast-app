@@ -16,7 +16,7 @@ export default function Search() {
 
         <div className="category-cards flex">
           <div className="header flex">
-            <h2 className="charts flex" style={{color: '#bbb',fontSize:'1.4rem'}}><span style={{ color: '#111',fontSize:'1.6rem' }}>Search</span> genres, languages, podcasts and more...</h2>
+            <h2 className="charts flex" style={{color: '#bbb',fontSize:'1.4rem'}}><span style={{ color: '#111',fontSize:'1.6rem' }}>Search</span><input type='text' placeholder='genres, languages, podcasts and more...' /> </h2>
           </div>
 
           <div  className="cards-container flex">

@@ -15,7 +15,6 @@ import img9 from '../media/375e4901692a28078fad9f84bd3f4fcd2d41a096.png';
 
 import './part2-style.css';
 import { FiFilter } from 'react-icons/fi';
-import LogNav from '../component/LogNav';
 import { useAuth } from '../Context/Auth-context';
 
 export default function Categories() {
@@ -52,8 +51,7 @@ export default function Categories() {
 
   return (
     <>
-      {loggedin===true&&(<Navbar/>)}
-      {loggedin===false&&(<LogNav/>)}
+      <Navbar/>
       <div className="category-container flex">
         <div className="pricing-header flex">
           <h3 className="title">Browse</h3>
