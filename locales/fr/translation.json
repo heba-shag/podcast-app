@@ -1,0 +1,686 @@
+{
+  "header": {
+    "slides": [
+      {
+        "title": "L'Expérience John Doe",
+        "description": "Description du Podcast",
+        "lorem": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Expérience Ici",
+        "description": "Description du Podcast",
+        "lorem": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Une Autre Expérience",
+        "description": "Description du Podcast",
+        "lorem": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Expérience Solitaire",
+        "description": "Description du Podcast",
+        "lorem": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Intentionnellement",
+        "description": "Description du Podcast",
+        "lorem": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+      }
+    ],
+    "categories": {
+      "educational": "Éducatif",
+      "entertainment": "Divertissement",
+      "slice_of_life": "Tranche de Vie"
+    },
+    "quick_links": {
+      "categories": "Catégories",
+      "audiobook": "Livre Audio",
+      "network": "Réseau"
+    }
+  },
+
+  "navbar": {
+    "logo_alt": "Logo du podcast",
+    "discover": "Découvrir",
+    "community": "Communauté",
+    "library": "Bibliothèque",
+    "about": "À propos",
+    "contact": "Contact",
+    "user_name": "Anna Liebert",
+    "user_alt": "Profil utilisateur",
+    "login": "Connexion"
+  },
+
+  "footer": {
+    "logo_alt": "Logo du podcast",
+    "about": "À propos",
+    "categories": "Catégories",
+    "career": "Carrière",
+    "pricing": "Tarifs",
+    "blog": "Blog",
+    "app_available": "Application disponible sur:",
+    "google_play": "Google Play",
+    "app_store": "App Store",
+    "google_podcast": "Google Podcast",
+    "spotify": "Spotify",
+    "youtube": "YouTube"
+  },
+
+  "trendy": {
+    "title": "Émissions tendance",
+    "more": "Plus",
+    "podcast_alt": "Couverture du podcast",
+    "podcast_description": "Description et détails du podcast"
+  },
+
+  "education": {
+    "title": "Éducation"
+  },
+
+  "entertainment": {
+    "title": "Divertissement"
+  },
+
+  "business": {
+    "title": "Affaires"
+  },
+
+  "audiobooks": {
+    "title": "Livres audio",
+    "more": "Plus",
+    "alt": "Couverture de livre audio",
+    "book1": {
+      "title": "Broken Country",
+      "description": "Description du livre audio Lorem ipsum dolor sit amet",
+      "genre1": "Vie familiale",
+      "genre2": "Tranche de vie",
+      "genre3": "Fiction historique"
+    },
+    "book2": {
+      "title": "Ayoade on Top",
+      "description": "Description du livre audio Lorem ipsum dolor sit amet",
+      "genre1": "Cinéma",
+      "genre2": "Arts du spectacle",
+      "genre3": "Comédie"
+    },
+    "book3": {
+      "title": "Atomic Habits",
+      "description": "Description du livre audio Lorem ipsum dolor sit amet",
+      "genre1": "Développement personnel",
+      "genre2": "Croissance personnelle",
+      "genre3": "Psychologie"
+    },
+    "book4": {
+      "title": "The Women",
+      "description": "Description du livre audio Lorem ipsum dolor sit amet",
+      "genre1": "Fiction historique",
+      "genre2": "Passage à l'âge adulte",
+      "genre3": "Guerre"
+    },
+    "book5": {
+      "title": "Where the Crawdads Sing",
+      "description": "Description du livre audio Lorem ipsum dolor sit amet",
+      "genre1": "Fiction",
+      "genre2": "Passage à l'âge adulte",
+      "genre3": "Mystère"
+    },
+    "book6": {
+      "title": "Je suis content que ma mère soit morte",
+      "description": "Description du livre audio Lorem ipsum dolor sit amet",
+      "genre1": "Famille",
+      "genre2": "Relations",
+      "genre3": "Tranche de vie"
+    },
+    "book7": {
+      "title": "The Dutch House",
+      "description": "Description du livre audio Lorem ipsum dolor sit amet",
+      "genre1": "Vie familiale",
+      "genre2": "Passage à l'âge adulte",
+      "genre3": "Fiction historique"
+    },
+    "book8": {
+      "title": "The Davenports",
+      "description": "Description du livre audio Lorem ipsum dolor sit amet",
+      "genre1": "Romance",
+      "genre2": "Fiction historique",
+      "genre3": "Jeunes adultes"
+    }
+  },
+  
+  "topPicks": {
+    "title": "Nos choix",
+    "more": "Plus",
+    "podcast_alt": "Image de couverture du podcast",
+    "card1": {
+      "title": "Voulez-vous être irrésistible ?",
+      "description": "Devenir Elle est un podcast rafraîchissant et autonomisant pour les femmes en voyage de croissance et de découverte de soi."
+    },
+    "card2": {
+      "title": "Enrichissez vos connaissances historiques",
+      "description": "Un regard sur les origines de la relation entre les États-Unis et l'Irak avant et pendant la guerre froide"
+    },
+    "card3": {
+      "title": "Comment changer votre vie ??",
+      "description": "Découvrez des étapes pratiques et des idées inspirantes pour transformer votre vie - une décision à la fois."
+    }
+  },
+
+  "aboutUs": {
+    "title": "À propos de nous",
+    "content1":"Bienvenue sur Static and Signal, votre destination incontournable pour tout ce qui concerne les podcasts ! Nous sommes passionnés par l'art de raconter des histoires et par le pouvoir de l'audio pour connecter, informer et divertir. Notre mission est de proposer une gamme variée de podcasts qui résonnent avec les auditeurs de tous horizons.",
+    "content2":"Chez Static and Signal, nous croyons que chaque voix mérite d'être entendue. Que vous soyez un passionné de podcasts ou que vous commenciez tout juste votre voyage audio, notre plateforme offre une sélection soignée d'émissions couvrant divers genres, notamment le true crime, la comédie, la technologie et le développement personnel."
+  },
+  "library":  {
+    "title": "Bibliothèque",
+    "search": {
+      "label": "Rechercher",
+      "placeholder": "Rechercher les favoris"
+    },
+    "favoritePodcasts": "Podcasts favoris",
+    "favoriteAudiobooks": "Livres audio favoris",
+    "podcastDescription": "Description du podcast Lorem ipsum dolor sit amet"
+  },
+  "career": {
+    "joinUsTitle": "Rejoignez-nous !",
+    "joinUsText": "Chez Static and Signal, nous croyons que chaque voix a une histoire qui mérite d'être entendue. Que vous soyez un amateur de podcasts chevronné ou que vous commenciez tout juste votre voyage audio, notre plateforme est votre porte d'entrée vers un monde de sons qui inspire, challenge et divertit. Plongez dans une collection soigneusement sélectionnée d'émissions couvrant le true crime, la comédie, la technologie et le développement personnel - chacune conçue pour éveiller votre curiosité et vous connecter à quelque chose de plus profond",
+    "whyWorkTitle": "Pourquoi travailler avec nous ?",
+    "whyWorkText": "Chez Static and Signal, vous ne ferez pas que pointer. Vous aiderez à créer des histoires qui suscitent des conversations et connectent des communautés. Nous sommes une équipe de créatifs, d'esprits technologiques et de conteurs qui construisent quelque chose qui va au-delà du son. Ici, vos idées comptent, vos compétences se développent et chaque projet est une opportunité d'explorer, de construire et d'amplifier des voix qui méritent d'être entendues. Rejoignez-nous et faites partie d'une culture qui prospère grâce à l'innovation, au sens et à un impact réel",
+    "departments": "Départements",
+    "openPositions": "{{count}} postes ouverts",
+    "apply": "Postuler",
+    "location": "San Francisco, Californie, États-Unis",
+    "contact": "Contact",
+    "contactLinks": {
+      "support": "Support",
+      "email": "Email",
+      "social": "Réseaux sociaux"
+    },
+    "departmentsList": {
+      "engineering": "Ingénierie",
+      "security": "Sécurité",
+      "it": "Informatique",
+      "product": "Produit",
+      "marketing": "Marketing",
+      "management": "Gestion",
+      "accounting": "Comptabilité"
+    },
+    "positions": {
+      "frontendDeveloper": "Développeur Front-end",
+      "backendDeveloper": "Développeur Back-end",
+      "staffSoftwareEngineer": "Ingénieur logiciel",
+      "iosEngineeringManager": "Responsable ingénierie iOS",
+      "seniorRiskAnalyst": "Analyste principal des risques",
+      "seniorItSupportSpecialist": "Spécialiste principal du support informatique",
+      "principalTechnicalProductManager": "Responsable technique principal de produit - Sécurité des applications",
+      "staffProductManager": "Responsable de produit",
+      "seniorProductDesigner": "Concepteur de produits senior",
+      "seniorDirectorCampaigns": "Directeur principal des campagnes, GTM et planification",
+      "regionalMarketing": "Marketing régional",
+      "principalTechnicalProgramManager": "Responsable technique principal de programme - Technologie d'entreprise",
+      "staffTechnicalProgramManager": "Responsable technique de programme",
+      "socialMediaSpecialist": "Spécialiste des médias sociaux",
+      "seoSpecialist": "Spécialiste SEO",
+      "seniorAccountant": "Comptable principal"
+    }
+  },
+  "categories": {
+    "title":"Parcourir",
+    "alphabetical":"Alphabétique",
+    "filter": "Filtrer",
+    "filterOptions": {
+      "aToZ": "A - Z",
+      "zToA": "Z - A",
+      "custom": "Ordre personnalisé",
+      "podcast": "Podcast",
+      "audiobooks": "Livres audio"
+    },
+    "alphabetLetters":"A B C D E F G H I J K L M N O P Q R S T U V W X Y Z",
+    "podcastAlt": "Couverture du podcast",
+    "podcastDescription":"Description du podcast Lorem ipsum dolor sit amet"
+  },
+  "community": {
+  "news": "Actualités",
+  "topPicks": "Nos choix ce mois-ci",
+  "topPicksDesc": "Accidental Tech a conquis le cœur des auditeurs, beaucoup ont écouté le podcast...",
+  "learnMore": "En savoir plus",
+  "shockingRevelation": "Révélation choquante",
+  "shockingRevelationDesc": "Les gens ont été choqués d'entendre ce que Margot a dit sur sa vie...",
+  "shaneDawson": "Shane Dawson sous le feu des critiques",
+  "shaneDawsonDesc": "Un drame éclate sur le plateau du podcast de Shane Dawson à cause d'un malentendu entre Rayland et Chris...",
+  "announcements": "Annonces",
+  "beingHer": "Being HER revient avec une nouvelle saison !",
+  "beingHerDesc": "Notre chère Margarita revient avec une nouvelle esthétique et un contenu plus épicé pour aider les femmes à devenir la femme de leurs rêves, à comprendre la psyché masculine et à construire des relations heureuses et durables. Voir l'image originale ici :",
+  "comments": "Commentaires",
+  "showMore": "Voir plus",
+  "jessicaComment": "J'adore cette femme !!! Elle me fait me sentir plus confiante. J'ai hâte d'en apprendre davantage d'elle dans cette nouvelle saison !",
+  "addComment": "Ajouter un commentaire",
+  "features": "Fonctionnalités",
+  "spotifyFeatures": "Fonctionnalités Spotify",
+  "spotifyFeaturesDesc": "Les nouvelles fonctionnalités montrent que Spotify continue de devancer ses concurrents et reste l'application la plus utilisée pour le streaming audio...",
+  "wantMore": "Vous en voulez plus ?",
+  "wantMoreDesc": "Vous pouvez vous abonner pour un contenu premium et une expérience fluide. Vous pouvez également travailler avec nous. Nous avons...",
+  "whatsNew": "Quoi de neuf",
+  "whatsNewDesc": "Vous pouvez maintenant interagir avec les autres, partager vos goûts et centres d'intérêt dans l'onglet communauté."
+},
+  "contact": {
+    "title": "Contact",
+    "address": {
+      "text": "Adresse, numéro de rue, pays"
+    },
+    "support": {
+      "text": "Support: 78438 34868"
+    },
+    "email": {
+      "text": "Email@email.com"
+    },
+    "social": {
+      "title": "Suivez-nous sur les réseaux sociaux:"
+    },
+    "form": {
+      "title": "Vous voulez nous envoyer un message?",
+      "fields": {
+        "name": "Nom",
+        "phone": "Téléphone",
+        "email": "Adresse e-mail",
+        "message": "Message"
+      },
+      "button": "Contactez-nous"
+    }
+  },
+  "pricing": {
+    "title": "Tarifs",
+    "toggle": {
+      "annual": "Annuel (économisez 20%)",
+      "monthly": "Mensuel"
+    },
+    "cards": {
+      "free": {
+        "title": "Gratuit",
+        "price": "compte démo pour\n14/30 jours",
+        "features": [
+          "Des centaines de podcasts à choisir",
+          "Profitez de contenus gratuits",
+          "Écoutes limitées par jour"
+        ]
+      },
+      "basic": {
+        "title": "Basique",
+        "price": "€3.79",
+        "period": "par an",
+        "features": [
+          "Tout comme le Gratuit\n+",
+          "Écoutes illimitées chaque jour",
+          "Variations de vitesse",
+          "Accès facile à des sections spécifiques"
+        ]
+      },
+      "premium": {
+        "title": "Premium",
+        "popular": "Populaire",
+        "price": "€5.79",
+        "period": "par an",
+        "features": [
+          "Tout comme le Basique\n+",
+          "Contenu premium réservé aux abonnés",
+          "Fonction de téléchargement",
+          "Plusieurs profils sur un seul compte"
+        ]
+      }
+    }
+  },
+  "episodes": {
+    "title": "Épisodes",
+    "filters": {
+      "oldest": "Plus anciens",
+      "options": "Options"
+    },
+    "showMore": "Afficher plus",
+    "episodesList": [
+      {
+        "title": "Introduction",
+        "description": "Bonjour, John Doe"
+      },
+      {
+        "title": "Épisode 1",
+        "description": "Description Podcast Lorem"
+      },
+      {
+        "title": "Épisode 2",
+        "description": "Description Podcast Lorem"
+      },
+      {
+        "title": "Épisode 3",
+        "description": "Description Podcast Lorem"
+      },
+      {
+        "title": "Épisode 4",
+        "description": "Description Podcast Lorem"
+      },
+      {
+        "title": "Épisode 5",
+        "description": "Description Podcast Lorem"
+      },
+      {
+        "title": "Épisode 6",
+        "description": "Description Podcast Lorem"
+      },
+      {
+        "title": "Épisode 7",
+        "description": "Description Podcast Lorem"
+      },
+      {
+        "title": "Épisode 8",
+        "description": "Description Podcast Lorem"
+      },
+      {
+        "title": "Épisode 9",
+        "description": "Description Podcast Lorem"
+      },
+      {
+        "title": "Épisode 10",
+        "description": "Description Podcast Lorem"
+      },
+      {
+        "title": "Épisode 11",
+        "description": "Description Podcast Lorem"
+      },
+      {
+        "title": "Épisode 12",
+        "description": "Description Podcast Lorem"
+      },
+      {
+        "title": "Épisode 13",
+        "description": "Description Podcast Lorem"
+      }
+    ]
+  },
+  "moreFromAuthor": {
+    "title": "Plus de l'auteur",
+    "cards": [
+      {
+        "title": "Voulez-vous être irrésistible?",
+        "description": "Devenir Elle est un podcast rafraîchissant et autonomisant pour les femmes en voyage de croissance et de découverte de soi."
+      },
+      {
+        "title": "Enrichissez vos connaissances historiques",
+        "description": "Un regard sur les origines de la relation entre les États-Unis et l'Irak avant et pendant la guerre froide"
+      },
+      {
+        "title": "Comment changer votre vie??",
+        "description": "Découvrez des étapes pratiques et des idées inspirantes pour transformer votre vie - une décision à la fois."
+      }
+    ]
+  },
+  "podcastHeader": {
+    "title": "L'Expérience de John Doe",
+    "categories": {
+      "educational": "Éducatif",
+      "entertainment": "Divertissement",
+      "sliceOfLife": "Tranche de vie"
+    },
+    "downloadInfo": "348 personnes ont téléchargé ce podcast",
+    "description": {
+      "title": "Description",
+      "content": "À 45 ans, Steve Patterson a fait une découverte choquante en ligne : sa propre page de personne disparue. Désespéré de découvrir pourquoi il figurait sur cette liste, Steve a appelé Todd Matthews, un enquêteur spécialisé dans les disparitions, à la recherche de réponses. Ensemble, Todd et Steve découvrent un passé familial sordide qui comprend des parents perdus depuis longtemps, des enlèvements et des meurtres. Il s'avère que Steve était présumé mort parce qu'au moment de sa naissance, sa mère biologique avait épousé un tueur en série qui a déchiré leur famille. En cours de route, Steve a dû comprendre une histoire personnelle avec plus de rebondissements qu'il n'aurait jamais imaginé. Dans cette série narrative de treize épisodes, Todd Matthews, un détective amateur du Tennessee, raconte l'histoire d'une famille déchirée par la tragédie et sa quête pour les réunir"
+    },
+    "tags": {
+      "title": "Mots-clés",
+      "items": [
+        "#Éducatif",
+        "#CrimeVéritable",
+        "#TrancheDeVie"
+      ]
+    }
+  },
+  "similarPodcasts": {
+    "title": "Podcasts Similaires",
+    "navigation": {
+      "previous": "Saison Précédente",
+      "next": "Prochaine Saison",
+      "more": "Plus"
+    },
+    "podcasts": [
+      {
+        "title": "Not alone",
+        "description": "Description Podcast Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "MM&M",
+        "description": "Description Podcast Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "The SIP",
+        "description": "Description Podcast Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Family Business",
+        "description": "Description Podcast Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "On Purpose",
+        "description": "Description Podcast Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Shane Dawson Pod",
+        "description": "Description Podcast Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Startalk",
+        "description": "Description Podcast Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "The Album Years",
+        "description": "Description Podcast Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Ear Hustle",
+        "description": "Description Podcast Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "That Sounds Fun",
+        "description": "Description Podcast Lorem ipsum dolor sit amet"
+      }
+    ]
+  },
+  "cardInfo": {
+    "title": "Informations de carte",
+    "fields": {
+      "cardNumber": "Numéro de carte",
+      "expirationDate": "Date d'expiration",
+      "cvv": "CVC/CVV"
+    }
+  },
+  "changeEmail": {
+    "fields": {
+      "email": "Email",
+      "recoveryAccount": "Ajouter un compte de récupération",
+      "placeholders": {
+        "email": "annaliebert@gamail.com",
+        "recoveryEmail": "annaliebert22@gamail.com"
+      }
+    }
+  },
+  "changePassword": {
+    "fields": {
+      "oldPassword": "Ancien mot de passe",
+      "newPassword": "Nouveau mot de passe",
+      "confirmPassword": "Confirmer le nouveau mot de passe"
+    }
+  },
+  "listeningHistory": {
+    "topResults": "Meilleurs résultats",
+    "favoriteAudiobooks": "Livres audio préférés",
+    "showMore": "Afficher plus",
+    "podcasts": [
+      {
+        "title": "Startalk",
+        "description": "Description Podcast Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Not alone",
+        "description": "Description Podcast Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "MM&M",
+        "description": "Description Podcast Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "The SIP",
+        "description": "Description Podcast Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Family Business",
+        "description": "Description Podcast Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "The Album Years",
+        "description": "Description Podcast Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Ear Hustle",
+        "description": "Description Podcast Lorem ipsum dolor sit amet"
+      }
+    ]
+  },
+  "order": {
+    "labels": {
+      "from": "De",
+      "to": "À"
+    },
+    "table": {
+      "headers": {
+        "date": "Date",
+        "purchase": "Achat",
+        "cost": "Coût"
+      },
+      "rows": [
+        {
+          "date": "05/07/2025",
+          "purchase": "Abonnement Premium",
+          "cost": "5.79€"
+        },
+        {
+          "date": "03/07/2025",
+          "purchase": "Abonnement Basique",
+          "cost": "3.79€"
+        }
+      ]
+    }
+  },
+   "personalInfo": {
+    "buttons": {
+      "changeProfile": "Changer la photo de profil",
+      "changeCover": "Changer la photo de couverture"
+    },
+    "form": {
+      "labels": {
+        "firstName": "Prénom",
+        "lastName": "Nom de famille",
+        "contactNumber": "Numéro de contact"
+      },
+      "placeholders": {
+        "firstName": "Anna",
+        "lastName": "Liebert",
+        "contactNumber": "+1(545)**********"
+      }
+    }
+  },
+  "sidebar": {
+    "general": "Général",
+    "creditPurchases": "Crédit et achats",
+    "menuItems": {
+      "personalInfo": {
+        "text": "Informations personnelles",
+        "icon": "BiUser"
+      },
+      "preferences": {
+        "text": "Préférences",
+        "icon": "SlSettings"
+      },
+      "switchAccounts": {
+        "text": "Changer de compte",
+        "icon": "HiSwitchHorizontal"
+      },
+      "changeEmail": {
+        "text": "Changer l'email",
+        "icon": "MdEmail"
+      },
+      "changePassword": {
+        "text": "Changer le mot de passe",
+        "icon": "BiKey"
+      },
+      "listeningHistory": {
+        "text": "Historique d'écoute",
+        "icon": "MdHistory"
+      },
+      "orderHistory": {
+        "text": "Historique des commandes",
+        "icon": "MdOutlineWork"
+      },
+      "cardInfo": {
+        "text": "Informations de carte",
+        "icon": "FaRegIdCard"
+      }
+    }
+  },
+   "switchAccount": {
+    "title": "Changer de compte"
+  },
+  "search": {
+    "title": "Recherche",
+    "placeholder": "genres, langues, podcasts et plus...",
+    "commonSearches": "Recherches courantes",
+    "popularQueries": [
+      "Meurtre Mystère et Maquillage",
+      "le SIP",
+      "Être ELLE"
+    ]
+  },
+  "sip": {
+    "searchTitle": "بحث",
+    "searchTerm": "SIP",
+    "topResults": "أفضل النتائج",
+    "favoriteAudiobooks": "الكتب الصوتية المفضلة",
+    "podcasts": [
+      {
+        "title": "ستارتوك",
+        "description": "وصف البودكاست لوريم إيبسوم دولور سيت أميت"
+      },
+      {
+        "title": "لست وحيدًا",
+        "description": "وصف البودكاست لوريم إيبسوم دولور سيت أميت"
+      },
+      {
+        "title": "إم إم آند إم",
+        "description": "وصف البودكاست لوريم إيبسوم دولور سيت أميت"
+      },
+      {
+        "title": "ذا SIP",
+        "description": "وصف البودكاست لوريم إيبسوم دولور سيت أميت"
+      },
+      {
+        "title": "عمل عائلي",
+        "description": "وصف البودكاست لوريم إيبسوم دولور سيت أميت"
+      },
+      {
+        "title": "بقصد",
+        "description": "وصف البودكاست لوريم إيبسوم دولور سيت أميت"
+      },
+      {
+        "title": "بودكاست شين دوسون",
+        "description": "وصف البودكاست لوريم إيبسوم دولور سيت أميت"
+      }
+    ],
+    "audiobooks": [
+      {
+        "title": "سنوات الألبوم",
+        "description": "وصف البودكاست لوريم إيبسوم دولور سيت أميت"
+      },
+      {
+        "title": "إير هاسل",
+        "description": "وصف البودكاست لوريم إيبسوم دولور سيت أميت"
+      }
+    ]
+  }
+
+}

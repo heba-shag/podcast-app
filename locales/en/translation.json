@@ -1,0 +1,706 @@
+{
+  "header": {
+    "slides": [
+      {
+        "title": "John Doe Experience",
+        "description": "Podcast Description",
+        "lorem": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Here Experience",
+        "description": "Podcast Description",
+        "lorem": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Another Experience",
+        "description": "Podcast Description",
+        "lorem": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Alone Experience",
+        "description": "Podcast Description",
+        "lorem": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "On purpose",
+        "description": "Podcast Description",
+        "lorem": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+      }
+    ],
+    "categories": {
+      "educational": "Educational",
+      "entertainment": "Entertainment",
+      "slice_of_life": "Slice of Life"
+    },
+    "quick_links": {
+      "categories": "Categories",
+      "audiobook": "Audiobook",
+      "network": "Network"
+    }
+  },
+
+  "navbar": {
+    "logo_alt": "Podcast logo",
+    "discover": "Discover",
+    "community": "Community",
+    "library": "Library",
+    "about": "About",
+    "contact": "Contact",
+    "user_name": "Anna Liebert",
+    "user_alt": "User profile",
+    "login": "Log in"
+  },
+
+  "footer": {
+    "logo_alt": "Podcast logo",
+    "about": "About",
+    "categories": "Categories",
+    "career": "Career",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "app_available": "App Available on:",
+    "google_play": "Google Play",
+    "app_store": "App Store",
+    "google_podcast": "Google Podcast",
+    "spotify": "Spotify",
+    "youtube": "YouTube"
+  },
+
+  "trendy": {
+    "title": "Trendy Shows",
+    "more": "More",
+    "podcast_alt": "Podcast cover",
+    "podcast_description": "Podcast description and details"
+  },
+
+  "education": {
+    "title": "Education"
+  },
+
+  "entertainment": {
+    "title": "Entertainment"
+  },
+
+  "business": {
+    "title": "business"
+  },
+
+  "audiobooks": {
+    "title": "Audiobooks",
+    "more": "More",
+    "alt": "Audiobook cover",
+    "book1": {
+      "title": "Broken Country",
+      "description": "Audiobook Description Lorem ipsum dolor sit amet",
+      "genre1": "Family Life",
+      "genre2": "Slice of Life",
+      "genre3": "Historical Fiction"
+    },
+    "book2": {
+      "title": "Ayoade on Top",
+      "description": "Audiobook Description Lorem ipsum dolor sit amet",
+      "genre1": "Film",
+      "genre2": "Performing Arts",
+      "genre3": "Comedy"
+    },
+    "book3": {
+      "title": "Atomic Habits",
+      "description": "Audiobook Description Lorem ipsum dolor sit amet",
+      "genre1": "Self-Help",
+      "genre2": "Personal Growth",
+      "genre3": "Psychology"
+    },
+    "book4": {
+      "title": "The Women",
+      "description": "Audiobook Description Lorem ipsum dolor sit amet",
+      "genre1": "Historical Fiction",
+      "genre2": "Coming of age",
+      "genre3": "War"
+    },
+    "book5": {
+      "title": "Where the Crawdads Sing",
+      "description": "Audiobook Description Lorem ipsum dolor sit amet",
+      "genre1": "Fiction",
+      "genre2": "Coming of Age",
+      "genre3": "Mystery"
+    },
+    "book6": {
+      "title": "I'm Glad My Mom Died",
+      "description": "Audiobook Description Lorem ipsum dolor sit amet",
+      "genre1": "Family",
+      "genre2": "Relationships",
+      "genre3": "Slice of Life"
+    },
+    "book7": {
+      "title": "The Dutch House",
+      "description": "Audiobook Description Lorem ipsum dolor sit amet",
+      "genre1": "Family Life",
+      "genre2": "Coming of Age",
+      "genre3": "Historical Fiction"
+    },
+    "book8": {
+      "title": "The Davenports",
+      "description": "Audiobook Description Lorem ipsum dolor sit amet",
+      "genre1": "Romance",
+      "genre2": "Historical Fiction",
+      "genre3": "Young Adult"
+    }
+  },
+
+  "topPicks": {
+    "title": "Top Picks",
+    "more": "More",
+    "podcast_alt": "Podcast cover image",
+    "card1": {
+      "title": "Want to be irresistible?",
+      "description": "Becoming Her is a refreshing, empowering podcast for women on the journey of growth and self-discovery."
+    },
+    "card2": {
+      "title": "Enrich your history knowledge",
+      "description": "Taking a look at the origins of the United States' relationship with Iraq before and during the Cold War"
+    },
+    "card3": {
+      "title": "How To Change your life??",
+      "description": "Discover practical steps and inspiring insights to transform your life--one decision at a time."
+    }
+  },
+
+  "aboutUs": { 
+    "title": "About Us",
+    "content1":"Welcome to Static and Signal, your go-to destination for all things podcasts! We are passionate about the art of storytelling and the power of audio to connect, inform, and entertain. Our mission is to curate a diverse range of podcasts that resonate with listeners from all walks of life.",
+    "content2":"At Static and Signal, we believe that every voice deserves to be heard. Whether you're a podcast enthusiast or just starting your audio journey, our platform offers a carefully selected collection of shows across various genres, including true crime, comedy, technology, and personal development."
+  },
+  
+  "library":  {
+    "title": "Library",
+    "search": {
+      "label": "Search",
+      "placeholder": "Search favorite"
+    },
+    "favoritePodcasts": "Favorite podcasts",
+    "favoriteAudiobooks": "Favorite audiobooks",
+    "podcastDescription": "Podcast Description Lorem ipsum dolor sit amet"
+  },
+
+  "career": {
+    "joinUsTitle": "Join Us!",
+    "joinUsText": "At Static and Signal, we believe every voice has a story worth hearing...",
+    "whyWorkTitle": "Why work with us?",
+    "whyWorkText": "At Static and Signal, you won't just clock in...",
+    "departments": "Departments",
+    "openPositions": "{{count}} Open positions",
+    "apply": "Apply",
+    "location": "San Francisco, CA, United States",
+    "contact": "Contact",
+    "contactLinks": {
+      "support": "Support",
+      "email": "Email",
+      "social": "Social"
+    },
+    "departmentsList": {
+      "engineering": "Engineering",
+      "security": "Security",
+      "it": "IT",
+      "product": "Product",
+      "marketing": "Marketing",
+      "management": "Management",
+      "accounting": "Accounting"
+    },
+    "positions": {
+      "frontendDeveloper": "Front end Developer",
+      "backendDeveloper": "Back end Developer",
+      "staffSoftwareEngineer": "Staff Software Engineer",
+      "iosEngineeringManager": "iOS Engineering Manager",
+      "seniorRiskAnalyst": "Senior Risk Analyst",
+      "seniorItSupportSpecialist": "Senior IT Support Specialist",
+      "principalTechnicalProductManager": "Principal Technical Product Manager Application Security",
+      "staffProductManager": "Staff Product Manager",
+      "seniorProductDesigner": "Senior Product Designer",
+      "seniorDirectorCampaigns": "Senior Director, Campaigns, GTM & Planning",
+      "regionalMarketing": "Regional Marketing",
+      "principalTechnicalProgramManager": "Principal Technical Program Manager, Enterprise Technology",
+      "staffTechnicalProgramManager": "Staff Technical Program Manager",
+      "socialMediaSpecialist": "Social Media Specialist",
+      "seoSpecialist": "SEO Specialist",
+      "seniorAccountant": "Senior Accountant"
+    }
+  },
+  "categories": {
+    "title":"Browse",
+    "alphabetical":"Alphabetical",
+    "filter": "Filter",
+    "filterOptions": {
+      "aToZ": "A - Z",
+      "zToA": "Z - A",
+      "custom": "Custom Order",
+      "podcast": "Podcast",
+      "audiobooks": "AudioBooks"
+    },
+    "alphabetLetters":"A B C D E F G H I J K L M N O P Q R S T U V W X Y Z",
+    "podcastAlt": "Podcast cover",
+    "podcastDescription":"Podcast Description Lorem ipsum dolor sit amet"
+  },
+  "community": {
+    "news": "News",
+    "topPicks": "Top picks this month",
+    "topPicksDesc": "Accidental Tech won the hearts of listeners, many streamed the pod...",
+    "learnMore": "Learn more",
+    "shockingRevelation": "Shocking revelation",
+    "shockingRevelationDesc": "People were shocked upon hearing what Margot has said about her life...",
+    "shaneDawson": "Shane Dawson under fire",
+    "shaneDawsonDesc": "Drama outbursts on the set of the Shane Dawson podcast because of a misunderstanding that occurred between Rayland and Chris...",
+    "announcements": "Announcements",
+    "beingHer": "Being HER is coming back with a new season!",
+    "beingHerDesc": "Our beloved Margarita is coming back with new aesthetics and spicier content to make women be the dream women that they aspire to be, understand the psyche of a man, and how to be in happy relationships that last a long time. See the original picture here:",
+    "comments": "Comments",
+    "showMore": "Show more",
+    "jessicaComment": "I absolutely love this woman!!! she makes me feel more confident. Can't wait to learn more from her on this new season!",
+    "addComment": "Add a comment",
+    "features": "Features",
+    "spotifyFeatures": "Spotify Features",
+    "spotifyFeaturesDesc": "New features show that Spotify is continuously staying ahead of competitors and remains the most used app for streaming audio...",
+    "wantMore": "Want more of us?",
+    "wantMoreDesc": "You can subscribe for more premium content and seamless experience. You can also work for us. We have...",
+    "whatsNew": "What's new",
+    "whatsNewDesc": "You can now engage with others, share your likes and interests on the community tab."
+  },
+  "contact": {
+    "title": "Contact",
+    "address": {
+      "text": "Address, street number, country"
+    },
+    "support": {
+      "text": "Support: 78438 34868"
+    },
+    "email": {
+      "text": "Email@email.com"
+    },
+    "social": {
+      "title": "Follow our socials:"
+    },
+    "form": {
+      "title": "Want to send us a message?",
+      "fields": {
+        "name": "Name",
+        "phone": "Phone",
+        "email": "Email address",
+        "message": "Message"
+      },
+      "button": "Contact us"
+    }
+  },
+  "pricing": {
+    "title": "Pricing",
+    "toggle": {
+      "annual": "Annual (save 20%)",
+      "monthly": "Monthly"
+    },
+    "cards": {
+      "free": {
+        "title": "Free",
+        "price": "demo account for\n14/30 days",
+        "features": [
+          "Hundreds of Podcasts to choose",
+          "Enjoy free content",
+          "Limited listens in one day"
+        ]
+      },
+      "basic": {
+        "title": "Basic",
+        "price": "€3.79",
+        "period": "per year",
+        "features": [
+          "Everything from Free\n+",
+          "Enjoy unlimited listens everyday",
+          "Speed variations",
+          "Easily hop on specific sections"
+        ]
+      },
+      "premium": {
+        "title": "Premium",
+        "popular": "Popular",
+        "price": "€5.79",
+        "period": "per year",
+        "features": [
+          "Everything from Basic\n+",
+          "Enjoy premium content for subscribers only",
+          "Download feature",
+          "Have multiple profiles on one account"
+        ]
+      }
+    }
+  },
+  "episodes": {
+    "title": "Episodes",
+    "filters": {
+      "oldest": "Oldest",
+      "options": "Options"
+    },
+    "showMore": "Show more",
+    "episodesList": [
+      {
+        "title": "Introduction",
+        "description": "Hello, John Doe"
+      },
+      {
+        "title": "Episode 1",
+        "description": "Podcast Description Lorem"
+      },
+      {
+        "title": "Episode 2",
+        "description": "Podcast Description Lorem"
+      },
+      {
+        "title": "Episode 3",
+        "description": "Podcast Description Lorem"
+      },
+      {
+        "title": "Episode 4",
+        "description": "Podcast Description Lorem"
+      },
+      {
+        "title": "Episode 5",
+        "description": "Podcast Description Lorem"
+      },
+      {
+        "title": "Episode 6",
+        "description": "Podcast Description Lorem"
+      },
+      {
+        "title": "Episode 7",
+        "description": "Podcast Description Lorem"
+      },
+      {
+        "title": "Episode 8",
+        "description": "Podcast Description Lorem"
+      },
+      {
+        "title": "Episode 9",
+        "description": "Podcast Description Lorem"
+      },
+      {
+        "title": "Episode 10",
+        "description": "Podcast Description Lorem"
+      },
+      {
+        "title": "Episode 11",
+        "description": "Podcast Description Lorem"
+      },
+      {
+        "title": "Episode 12",
+        "description": "Podcast Description Lorem"
+      },
+      {
+        "title": "Episode 13",
+        "description": "Podcast Description Lorem"
+      }
+    ]
+  },
+  "moreFromAuthor": {
+    "title": "More From Author",
+    "cards": [
+      {
+        "title": "Want to be irresistible?",
+        "description": "Becoming Her is a refreshing, empowering podcast for women on the journey of growth and self-discovery."
+      },
+      {
+        "title": "Enrich your history knowledge",
+        "description": "Taking a look at the origins of the United States' relationship with Iraq before and during the Cold War"
+      },
+      {
+        "title": "How To Change your life??",
+        "description": "Discover practical steps and inspiring insights to transform your life--one decision at a time."
+      }
+    ]
+  },
+  "podcastHeader": {
+    "title": "John Doe Experience",
+    "categories": {
+      "educational": "Educational",
+      "entertainment": "Entertainment",
+      "sliceOfLife": "Slice of Life"
+    },
+    "downloadInfo": "348 people have downloaded this podcast",
+    "description": {
+      "title": "Description",
+      "content": "At age 45, Steve Patterson made a shocking online discovery: his own missing person's page. Desperate to uncover why he had been included on the list, Steve called Todd Matthews, a missing-persons investigator, in search of answers. Together, Todd and Steve discover a sordid family past that includes long-lost relatives, kidnappings, and murders. It turns out that Steve was presumed dead because around the time he was born, his biological mother had married a serial killer who tore their family apart. Along the way, Steve would have to make sense of a personal story with more twists and turns than he'd ever imagined. In this thirteen-episode narrative series, Todd Matthews, an amateur sleuth from Tennessee, tells the story of a family torn apart by tragedy and his quest to bring them back together"
+    },
+    "tags": {
+      "title": "Tags",
+      "items": [
+        "#Educational",
+        "#True Crime",
+        "#Slice of Life"
+      ]
+    }
+  },
+  "similarPodcasts": {
+    "title": "Similar Podcasts",
+    "navigation": {
+      "previous": "Previous Season",
+      "next": "Next Season",
+      "more": "More"
+    },
+    "podcasts": [
+      {
+        "title": "Not alone",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "MM&M",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "The SIP",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Family Business",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "On Purpose",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Shane Dawson Pod",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Startalk",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "The Album Years",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Ear Hustle",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "That Sounds Fun",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      }
+    ]
+  },
+  "cardInfo": {
+    "title": "Card information",
+    "fields": {
+      "cardNumber": "Card number",
+      "expirationDate": "Expiration date",
+      "cvv": "CVC/CVV"
+    }
+  },
+  "changeEmail": {
+    "fields": {
+      "email": "Email",
+      "recoveryAccount": "Add recovery account",
+      "placeholders": {
+        "email": "annaliebert@gamail.com",
+        "recoveryEmail": "annaliebert22@gamail.com"
+      }
+    }
+  },
+  "changePassword": {
+    "fields": {
+      "oldPassword": "Old password",
+      "newPassword": "New password",
+      "confirmPassword": "Confirm New password"
+    }
+  },
+  "listeningHistory": {
+    "topResults": "Top Results",
+    "favoriteAudiobooks": "Favorite audiobooks",
+    "showMore": "Show more",
+    "podcasts": [
+      {
+        "title": "Startalk",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Not alone",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "MM&M",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "The SIP",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Family Business",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "The Album Years",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Ear Hustle",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      }
+    ]
+  },
+  "order": {
+    "labels": {
+      "from": "From",
+      "to": "To"
+    },
+    "table": {
+      "headers": {
+        "date": "Date",
+        "purchase": "Purchase",
+        "cost": "Cost"
+      },
+      "rows": [
+        {
+          "date": "07/05/2025",
+          "purchase": "Premium subscription",
+          "cost": "5.79€"
+        },
+        {
+          "date": "07/03/2025",
+          "purchase": "Basic subscription",
+          "cost": "3.79€"
+        }
+      ]
+    }
+  },
+  "personalInfo": {
+    "buttons": {
+      "changeProfile": "Change profile picture",
+      "changeCover": "Change cover picture"
+    },
+    "form": {
+      "labels": {
+        "firstName": "First name",
+        "lastName": "Last name",
+        "contactNumber": "Contact number"
+      },
+      "placeholders": {
+        "firstName": "Anna",
+        "lastName": "Liebert",
+        "contactNumber": "+1(545)**********"
+      }
+    }
+  },
+    "preferences": {
+    "labels": {
+      "language": "Language",
+      "fontSize": "Font size"
+    },
+    "options": {
+      "languages": {
+        "arabic": "العربية (Arabic)",
+        "english": "English",
+        "italian": "Italiano (Italian)"
+      },
+      "fontSizes": {
+        "small": "Small",
+        "medium": "Medium",
+        "large": "Large"
+      }
+    }
+  },
+  "sidebar": {
+    "general": "General",
+    "creditPurchases": "Credit and purchases",
+    "menuItems": {
+      "personalInfo": {
+        "text": "Personal information",
+        "icon": "BiUser"
+      },
+      "preferences": {
+        "text": "Preferences",
+        "icon": "SlSettings"
+      },
+      "switchAccounts": {
+        "text": "Switch accounts",
+        "icon": "HiSwitchHorizontal"
+      },
+      "changeEmail": {
+        "text": "Change email",
+        "icon": "MdEmail"
+      },
+      "changePassword": {
+        "text": "Change password",
+        "icon": "BiKey"
+      },
+      "listeningHistory": {
+        "text": "Listening history",
+        "icon": "MdHistory"
+      },
+      "orderHistory": {
+        "text": "Order history",
+        "icon": "MdOutlineWork"
+      },
+      "cardInfo": {
+        "text": "Card information",
+        "icon": "FaRegIdCard"
+      }
+    }
+  },
+  "switchAccount": {
+    "title": "Switch accounts"
+  },
+   "search": {
+    "title": "Search",
+    "placeholder": "genres, languages, podcasts and more...",
+    "commonSearches": "Common searches",
+    "popularQueries": [
+      "Murder Mystery and Makeup",
+      "the SIP",
+      "Being HER"
+    ]
+  },
+  "sip": {
+    "searchTitle": "Search",
+    "searchTerm": "SIP",
+    "topResults": "Top Results",
+    "favoriteAudiobooks": "Favorite audiobooks",
+    "podcasts": [
+      {
+        "title": "Startalk",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Not alone",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "MM&M",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "The SIP",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Family Business",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "On Purpose",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Shane Dawson Pod",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      }
+    ],
+    "audiobooks": [
+      {
+        "title": "The Album Years",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Ear Hustle",
+        "description": "Podcast Description Lorem ipsum dolor sit amet"
+      }
+    ]
+  }
+
+}
