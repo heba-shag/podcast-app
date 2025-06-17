@@ -1,53 +1,49 @@
 import Footer from '../component/Footer';
 import Navbar from '../component/Navbar';
-
 import './part2-style.css';
+import { useTranslation } from 'react-i18next';
 
 export default function PricingPage(){
+    const { t } = useTranslation();
+
     return(
         <>
             <Navbar/>
             <div className="pricing-container flex">
                 <div className="pricing-header flex">
-                    <button className="btn">Annual (save 20%)</button>
-                    <span>Monthly</span>
-
+                    <button className="btn">{t('pricing.toggle.annual')}</button>
+                    <span>{t('pricing.toggle.monthly')}</span>
                 </div>
                 <div className="pricing-cards flex">
                     <div className="card flex"> 
-                        <p className="card-title">Free</p>
-                        <h1 className="price">demo account for <br/> 14/30 days</h1>
+                        <p className="card-title">{t('pricing.cards.free.title')}</p>
+                        <h1 className="price">{t('pricing.cards.free.price')}</h1>
                         <ul>
-                            <li className='list-item'>Hundreds of Podcasts to choose </li>
-                            <li className='list-item'>Enjoy free content</li>
-                            <li className='list-item'>Limited listens in one day</li>
+                            {t('pricing.cards.free.features', { returnObjects: true }).map((feature, index) => (
+                                <li key={index} className='list-item'>{feature}</li>
+                            ))}
                         </ul>
-
                     </div>
 
                     <div className="card flex"> 
-                        <p className="card-title">Basic</p>
-                        <h1 className="price">€3.79 <span>per year</span></h1>
+                        <p className="card-title">{t('pricing.cards.basic.title')}</p>
+                        <h1 className="price">{t('pricing.cards.basic.price')} <span>{t('pricing.cards.basic.period')}</span></h1>
                         <ul>
-                            <li>Everything from Free <br/>+</li>
-                            <li className='list-item'>Enjoy unlimited listens everyday </li>
-                            <li className='list-item'>Speed variations</li>
-                            <li className='list-item'>Easily hop on specific sections</li>
+                            {t('pricing.cards.basic.features', { returnObjects: true }).map((feature, index) => (
+                                <li key={index} className={index === 0 ? '' : 'list-item'}>{feature}</li>
+                            ))}
                         </ul>
-
                     </div>
 
                     <div style={{border:'.1rem solid #f57f41'}} className="card flex"> 
-                        <p className="popular">Popular</p>
-                        <p className="card-title">Premium</p>
-                        <h1 className="price">€5.79 <span>per year</span></h1>
+                        <p className="popular">{t('pricing.cards.premium.popular')}</p>
+                        <p className="card-title">{t('pricing.cards.premium.title')}</p>
+                        <h1 className="price">{t('pricing.cards.premium.price')} <span>{t('pricing.cards.premium.period')}</span></h1>
                         <ul>
-                            <li style={{listStyle:'none'}}>Everything from Basic <br/>+</li> 
-                            <li className='list-item'>Enjoy premium content for subscribers only </li>
-                            <li className='list-item'>Download feature</li>
-                            <li className='list-item'>Have multiple profiles on one account</li>
+                            {t('pricing.cards.premium.features', { returnObjects: true }).map((feature, index) => (
+                                <li key={index} style={index === 0 ? {listStyle:'none'} : {}} className={index === 0 ? '' : 'list-item'}>{feature}</li>
+                            ))}
                         </ul>
-
                     </div>
                 </div>
             </div>

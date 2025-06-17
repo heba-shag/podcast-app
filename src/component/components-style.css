@@ -108,6 +108,17 @@
             font-size: 2rem;
         }
     }
+
+    select{
+        width: 10%;
+        padding: .3rem;
+        outline: none;
+        border: none;
+        background: var(--main-color);
+        color: var(--white-color);
+        text-align: center;
+
+    }
 }
 
 .home-section{
@@ -433,6 +444,17 @@
     
 }
 
+[dir="rtl"] .text-description {
+  text-align: right;
+}
+
+[dir="rtl"] .list.flex {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .quick-links.flex {
+  flex-direction: row-reverse;
+}
 @media screen and (max-width:992px) {
 
     .home-section{

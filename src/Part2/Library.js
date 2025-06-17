@@ -1,4 +1,3 @@
-
 import Footer from '../component/Footer';
 import Navbar from '../component/Navbar';
 
@@ -13,102 +12,104 @@ import img8 from '../media/dae2a0bf4cf8890a78d7d094798be6e89c7d8a8d.jpg';
 import img9 from '../media/375e4901692a28078fad9f84bd3f4fcd2d41a096.png';
 
 import './part2-style.css';
+import { useTranslation } from 'react-i18next';
+
 export default function Library() {
+  const { t } = useTranslation();
 
   return (
     <>
       <Navbar/>
       <div className="library-container flex">
         <div className="pricing-header flex">
-          <h3 className="title">Library</h3>
+          <h3 className="title">{t('library.title')}</h3>
         </div>
 
         <div className="category-cards flex">
           <div className="header flex">
-            <h2 className="charts flex" style={{color: '#bbb',fontSize:'1.4rem'}}><span style={{ color: '#111',fontSize:'1.6rem' }}>Search</span><input type='text' placeholder='Search favorite' /> </h2>
+            <h2 className="charts flex" style={{color: '#bbb',fontSize:'1.4rem'}}>
+              <span style={{ color: '#111',fontSize:'1.6rem' }}>{t('library.search.label')}</span>
+              <input type='text' placeholder={t('library.search.placeholder')} /> 
+            </h2>
           </div>
 
-          <div  className="cards-container flex">
-            <h2 className='cards-title'>Favorite podcasts</h2>
+          <div className="cards-container flex">
+            <h2 className='cards-title'>{t('library.favoritePodcasts')}</h2>
             <div style={{ flexWrap: 'wrap' }} className='cards flex'>
-
                 <div className="card">
-                    <img src={img7} alt="" />
+                    <img src={img7} alt={t('library.podcastDescription')} />
                     <h2>Startalk</h2>
-                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                    <p>{t('library.podcastDescription')}</p>
                 </div>
                 <div className="card">
-                    <img src={img1} alt="" />
+                    <img src={img1} alt={t('library.podcastDescription')} />
                     <h2>Not alone</h2>
-                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                    <p>{t('library.podcastDescription')}</p>
                 </div>
 
                 <div className="card">
-                    <img src={img2} alt="" />
+                    <img src={img2} alt={t('library.podcastDescription')} />
                     <h2>MM&M</h2>
-                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                    <p>{t('library.podcastDescription')}</p>
                 </div>
 
                 <div className="card">
-                    <img src={img3} alt="" />
+                    <img src={img3} alt={t('library.podcastDescription')} />
                     <h2>The SIP</h2>
-                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                    <p>{t('library.podcastDescription')}</p>
                 </div>
 
                 <div className="card">
-                    <img src={img4} alt="" />
+                    <img src={img4} alt={t('library.podcastDescription')} />
                     <h2>Family Business</h2>
-                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                    <p>{t('library.podcastDescription')}</p>
                 </div>
 
                 <div className="card">
-                    <img src={img5} alt="" />
+                    <img src={img5} alt={t('library.podcastDescription')} />
                     <h2>On Purpose</h2>
-                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                    <p>{t('library.podcastDescription')}</p>
                 </div>
 
                 <div className="card">
-                    <img src={img1} alt="" />
+                    <img src={img1} alt={t('library.podcastDescription')} />
                     <h2>Not alone</h2>
-                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                    <p>{t('library.podcastDescription')}</p>
                 </div>
 
                 <div className="card">
-                    <img src={img6} alt="" />
+                    <img src={img6} alt={t('library.podcastDescription')} />
                     <h2>Shane Dawson Pod</h2>
-                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                    <p>{t('library.podcastDescription')}</p>
                 </div>
 
                 <div className="card">
-                    <img src={img7} alt="" />
+                    <img src={img7} alt={t('library.podcastDescription')} />
                     <h2>Startalk</h2>
-                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                    <p>{t('library.podcastDescription')}</p>
                 </div>
 
                 <div className="card">
-                    <img src={img2} alt="" />
+                    <img src={img2} alt={t('library.podcastDescription')} />
                     <h2>MM&M</h2>
-                    <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                    <p>{t('library.podcastDescription')}</p>
                 </div>
-
             </div>
           </div>
 
           <div className="cards-container flex">
-            <h2 className='cards-title'>Favorite audiobooks</h2>
+            <h2 className='cards-title'>{t('library.favoriteAudiobooks')}</h2>
             <div className='cards flex'>
-              
-
               <div className="card">
-                <img src={img8} alt="" />
+                <img src={img8} alt={t('library.podcastDescription')} />
                 <h2>The Album Years</h2>
-                <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                <p>{t('library.podcastDescription')}</p>
               </div>
 
               <div className="card">
-                <img src={img9} alt="" />
+                <img src={img9} alt={t('library.podcastDescription')} />
                 <h2>Ear Hustle</h2>
-                <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                <p>{t('library.podcastDescription')}</p>
               </div>
             </div>
           </div>

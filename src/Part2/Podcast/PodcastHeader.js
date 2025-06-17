@@ -1,59 +1,53 @@
-
 import './pocastStyle.css'; 
-
 import homePic1 from '../../media/9b30f2ea61a29ad6f18170d64f31f6136c8ca0cb.png';
-
 import { FaCloudArrowDown, FaRegBookmark } from 'react-icons/fa6';
-
+import { useTranslation } from 'react-i18next';
 
 export default function PodcatHeader(){
+    const { t } = useTranslation();
 
     return(
-        <div className="home-section2 flex ">
-            <div className="welcome-section ">
+        <div className="home-section2 flex">
+            <div className="welcome-section">
                 <div className="description flex">
                     <div className="img">
                         <img src={homePic1} alt=""/>
                     </div>
                     <div className="text-description">
-                        <h1>John Doe Experience</h1>
+                        <h1>{t('podcastHeader.title')}</h1>
                         <div className="list flex">
-                            <p>Educational</p>
-                            <p>Entertainment</p>
-                            <p>Slice of Live</p>
+                            <p>{t('podcastHeader.categories.educational')}</p>
+                            <p>{t('podcastHeader.categories.entertainment')}</p>
+                            <p>{t('podcastHeader.categories.sliceOfLife')}</p>
                         </div>
                     </div>
 
                     <div className="quick-links-container flex">
                         <div className="quick-links flex">
-                            <div  className="link-container flex"><FaCloudArrowDown className="icon"/><span>348 people have downloaded this podcast</span></div>
-                            <div className="icon-container flex"><FaRegBookmark className="icon"/></div>
+                            <div className="link-container flex">
+                                <FaCloudArrowDown className="icon"/>
+                                <span>{t('podcastHeader.downloadInfo')}</span>
+                            </div>
+                            <div className="icon-container flex">
+                                <FaRegBookmark className="icon"/>
+                            </div>
                         </div>
                     </div>
 
                     <div className="about-podcast flex">
                         <div className="text">
-                                <h1>Description</h1>
-                                <p>Tags At age 45, Steve Patterson made a shocking online discovery: his own missing person’s page. 
-                                    Desperate to uncover why he had been included on the list, Steve called Todd Matthews, a missingpersons investigator, in search of answers. Together, Todd and Steve discover a sordid family past 
-                                    that includes long-lost relatives, kidnappings, and murders. It turns out that Steve was presumed 
-                                    dead because around the time he was born, his biological mother had married a serial killer who tore 
-                                    their family apart. Along the way, Steve would have to make sense of a personal story with more 
-                                    twists and turns than he’d ever imagined. In this thirteen-episode narrative series, Todd Matthews, 
-                                    an amateur sleuth from Tennessee, tells the story of a family torn apart by tragedy and his quest to 
-                                    bring them back together</p>
-                                
+                            <h1>{t('podcastHeader.description.title')}</h1>
+                            <p>{t('podcastHeader.description.content')}</p>
+                        </div>
+                        <div className="text">
+                            <h1>{t('podcastHeader.tags.title')}</h1>
+                            <div className="list flex">
+                                {t('podcastHeader.tags.items', { returnObjects: true }).map((tag, index) => (
+                                    <p key={index}>{tag}</p>
+                                ))}
                             </div>
-                            <div className="text">
-                                <h1>Tags</h1>
-                                <div className="list flex">
-                                    <p>#Educational</p>
-                                    <p>#True Crime</p>
-                                    <p>#Slice of Live</p>
-                                </div>
-                            </div>
+                        </div>
                     </div>
-                    
                 </div>
             </div>
         </div>

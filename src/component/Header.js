@@ -4,6 +4,8 @@ import { GrNetwork } from "react-icons/gr";
 import './components-style.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css"; 
+import { useTranslation } from 'react-i18next';
+import '../I18n';
 
 import homePic1 from '../media/9b30f2ea61a29ad6f18170d64f31f6136c8ca0cb.png';
 import homePic2 from '../media/8c09b0fb9b075b963e1260dce9f38dc2dbf1519e.jpg';
@@ -13,9 +15,11 @@ import homePic5 from '../media/53c2d26402d321c820b7e06240b501ea05661961.jpg';
 
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function Header(){
-     const settings = {
+   const { t, i18n } = useTranslation();
+    const settings = {
         dots: true, 
         infinite: true, 
         speed: 2000, 
@@ -23,8 +27,10 @@ export default function Header(){
         slidesToScroll: 1,
         autoplay: true, 
         autoplaySpeed: 2000,
-        
     };
+    useEffect(() => {
+      document.body.dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
+    }, [i18n.language]);
 
     return(
         <div className="home-section section">
@@ -36,13 +42,13 @@ export default function Header(){
                                 <img src={homePic1} alt=""/>
                             </div>
                             <div className="text-description">
-                                <h1>John Doe Experience</h1>
-                                <p>Podcast Description<br/>
-                                Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                                <h1>{t('header.slides.0.title')}</h1>
+                                <p>{t('header.slides.0.description')}<br/>
+                                {t('header.slides.0.lorem')}</p>
                                 <div className="list flex">
-                                    <p>Educational</p>
-                                    <p>Entertainment</p>
-                                    <p>Slice of Live</p>
+                                    <p>{t('header.categories.educational')}</p>
+                                    <p>{t('header.categories.entertainment')}</p>
+                                    <p>{t('header.categories.slice_of_life')}</p>
                                 </div>
                             </div>
                         </div>
@@ -54,13 +60,13 @@ export default function Header(){
                                 <img src={homePic2} alt=""/>
                             </div>
                             <div className="text-description">
-                                <h1>Here Experience</h1>
-                                <p>Podcast Description<br/>
-                                Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                                <h1>{t('header.slides.1.title')}</h1>
+                                <p>{t('header.slides.1.description')}<br/>
+                                {t('header.slides.1.lorem')}</p>
                                 <div className="list flex">
-                                    <p>Slice of Live</p>
-                                    <p>Entertainment</p>
-                                    <p>Educational</p>
+                                    <p>{t('header.categories.slice_of_life')}</p>
+                                    <p>{t('header.categories.entertainment')}</p>
+                                    <p>{t('header.categories.educational')}</p>
                                 </div>
                             </div>
                         </div>
@@ -72,13 +78,13 @@ export default function Header(){
                                 <img src={homePic3} alt=""/>
                             </div>
                             <div className="text-description">
-                                <h1>another Experience</h1>
-                                <p>Podcast Description<br/>
-                                Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                                <h1>{t('header.slides.2.title')}</h1>
+                                <p>{t('header.slides.2.description')}<br/>
+                                {t('header.slides.2.lorem')}</p>
                                 <div className="list flex">
-                                    <p>Entertainment</p>
-                                    <p>Educational</p>
-                                    <p>Slice of Live</p>
+                                    <p>{t('header.categories.entertainment')}</p>
+                                    <p>{t('header.categories.educational')}</p>
+                                    <p>{t('header.categories.slice_of_life')}</p>
                                 </div>
                             </div>
                         </div>
@@ -90,13 +96,13 @@ export default function Header(){
                                 <img src={homePic4} alt=""/>
                             </div>
                             <div className="text-description">
-                                <h1>Alone Experience</h1>
-                                <p>Podcast Description<br/>
-                                Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                                <h1>{t('header.slides.3.title')}</h1>
+                                <p>{t('header.slides.3.description')}<br/>
+                                {t('header.slides.3.lorem')}</p>
                                 <div className="list flex">
-                                    <p>Educational</p>
-                                    <p>Slice of Live</p>
-                                    <p>Entertainment</p>
+                                    <p>{t('header.categories.educational')}</p>
+                                    <p>{t('header.categories.slice_of_life')}</p>
+                                    <p>{t('header.categories.entertainment')}</p>
                                 </div>
                             </div>
                         </div>
@@ -108,13 +114,13 @@ export default function Header(){
                                 <img src={homePic5} alt=""/>
                             </div>
                             <div className="text-description">
-                                <h1>On purpose</h1>
-                                <p>Podcast Description<br/>
-                                Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                                <h1>{t('header.slides.4.title')}</h1>
+                                <p>{t('header.slides.4.description')}<br/>
+                                {t('header.slides.4.lorem')}</p>
                                 <div className="list flex">
-                                    <p>Educational</p>
-                                    <p>Slice of Live</p>
-                                    <p>Entertainment</p>
+                                    <p>{t('header.categories.educational')}</p>
+                                    <p>{t('header.categories.slice_of_life')}</p>
+                                    <p>{t('header.categories.entertainment')}</p>
                                 </div>
                             </div>
                         </div>
@@ -122,12 +128,11 @@ export default function Header(){
                 </Slider>
             </div>
     
-    
             <div className="quick-links-container flex">
                 <div className="quick-links flex">
-                    <div   className="link-container flex"><BiCategoryAlt className="icon"/><span>Categories</span></div>
-                    <div className="link-container flex"><FcAudioFile className="icon"/><span>Audiobook</span></div>
-                    <Link style={{color:'white'}} to='/community' className="link-container flex"><GrNetwork className="icon"/><span>Network</span></Link>
+                    <div className="link-container flex"><BiCategoryAlt className="icon"/><span>{t('header.quick_links.categories')}</span></div>
+                    <div className="link-container flex"><FcAudioFile className="icon"/><span>{t('header.quick_links.audiobook')}</span></div>
+                    <Link style={{color:'white'}} to='/community' className="link-container flex"><GrNetwork className="icon"/><span>{t('header.quick_links.network')}</span></Link>
                 </div>
             </div>
         </div>

@@ -1,4 +1,5 @@
 import './sectionsStyle.css';
+import { useTranslation } from 'react-i18next';
 
 import img1 from '../media/e31e56bb26eb03a699ac8e4ea41fd11a740175e7.jpg';
 import img2 from '../media/79f237da92fdf400f628f5c625d1956a386b23e2.jpg';
@@ -10,6 +11,7 @@ import Slider from 'react-slick';
 import { IoIosArrowForward } from 'react-icons/io';
 
 export default function TopPicks(){
+    const { t } = useTranslation();
     const settings = {
         dots: false,
         infinite: true,
@@ -31,46 +33,42 @@ export default function TopPicks(){
     return(
         <div className="top-picks-section section flex">
             <div className="header flex">
-                <h2 className="title">Top Picks</h2>
-                <h3 className="more"><IoIosArrowForward className='icon' /><span>More</span></h3>
+                <h2 className="title">{t('topPicks.title')}</h2>
+                <h3 className="more"><IoIosArrowForward className='icon' /><span>{t('topPicks.more')}</span></h3>
             </div>
     
             <div className="cards-container flex">
                 <Slider {...settings}>
                     <div>
                         <div className="card flex">
-                            <img src={img1} alt=""/>
+                            <img src={img1} alt={t('topPicks.podcast_alt')}/>
                             <div className="text-container">
-                                <h2>Want to be irresistible?</h2>
-                                <p>Becoming Her is a refreshing, empowering podcast for women on the journey of growth and self-discovery. </p>
+                                <h2>{t('topPicks.card1.title')}</h2>
+                                <p>{t('topPicks.card1.description')}</p>
                             </div>
                         </div>
-
                     </div>
 
                     <div>
                         <div className="card flex">
-                            <img src={img2} alt=""/>
+                            <img src={img2} alt={t('topPicks.podcast_alt')}/>
                             <div className="text-container">
-                                <h2>Enrich your history knowledge</h2>
-                                <p>Taking a look at the origins of the United States' relationship with Iraq before and during the Cold War</p>
+                                <h2>{t('topPicks.card2.title')}</h2>
+                                <p>{t('topPicks.card2.description')}</p>
                             </div>
                         </div>
-
                     </div>
 
                     <div>
-
                         <div className="card flex">
-                            <img src={img3} alt=""/>
+                            <img src={img3} alt={t('topPicks.podcast_alt')}/>
                             <div className="text-container">
-                                <h2>How To Change your life??</h2>
-                                <p>Discover practical steps and inspiring insights to transform your life--one decision at atime.</p>
+                                <h2>{t('topPicks.card3.title')}</h2>
+                                <p>{t('topPicks.card3.description')}</p>
                             </div>
                         </div>
                     </div>
                 </Slider>
-                
             </div>
         </div>
     )

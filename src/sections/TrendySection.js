@@ -1,4 +1,5 @@
 import './sectionsStyle.css';
+import { useTranslation } from 'react-i18next';
 
 import img1 from '../media/13ee52bcd851ae74b7abf2cc415363dac71bc160.jpg';
 import img2 from '../media/4f2ac475f6e34f45c2e676558da7dd48ba7fe9ce.jpg';
@@ -19,6 +20,7 @@ import { IoIosArrowForward } from 'react-icons/io';
 
 
 export default function TrendySection(){
+    const { t } = useTranslation();
     const settings = {
         dots: false,
         infinite: true,
@@ -31,74 +33,72 @@ export default function TrendySection(){
     return(
         <div className="trendy-section section flex">
             <div className="header flex">
-                <h2 className="title">Trendy Shows</h2>
-                <h3 className="more"><IoIosArrowForward className='icon' /><span>More</span></h3>
+                <h2 className="title">{t('trendy.title')}</h2>
+                <h3 className="more"><IoIosArrowForward className='icon' /><span>{t('trendy.more')}</span></h3>
             </div>
     
             <div className="cards-container flex">
                 <Slider {...settings}>
                     <Link to='/podcast-details' className="card">
-                        <img src={img1} alt=""/>
+                        <img src={img1} alt={t('trendy.podcast_alt')}/>
                         <h2>Not alone</h2>
-                        <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                        <p>{t('trendy.podcast_description')}</p>
                     </Link>
         
                     <Link to='/podcast-details' className="card">
-                        <img src={img2} alt=""/>
+                        <img src={img2} alt={t('trendy.podcast_alt')}/>
                         <h2>MM&M</h2>
-                        <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                        <p>{t('trendy.podcast_description')}</p>
                     </Link>
         
                     <Link to='/podcast-details' className="card">
-                        <img src={img3} alt=""/>
+                        <img src={img3} alt={t('trendy.podcast_alt')}/>
                         <h2>The SIP</h2>
-                        <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                        <p>{t('trendy.podcast_description')}</p>
                     </Link>
         
                     <Link to='/podcast-details' className="card">
-                        <img src={img4} alt=""/>
+                        <img src={img4} alt={t('trendy.podcast_alt')}/>
                         <h2>Family Business</h2>
-                        <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                        <p>{t('trendy.podcast_description')}</p>
                     </Link>
         
                     <Link to='/podcast-details' className="card">
-                        <img src={img5} alt=""/>
+                        <img src={img5} alt={t('trendy.podcast_alt')}/>
                         <h2>On Purpose</h2>
-                        <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                        <p>{t('trendy.podcast_description')}</p>
                     </Link>
         
                     <Link to='/podcast-details' className="card">
-                        <img src={img6} alt=""/>
+                        <img src={img6} alt={t('trendy.podcast_alt')}/>
                         <h2>Shane Dawson Pod </h2>
-                        <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                        <p>{t('trendy.podcast_description')}</p>
                     </Link>
         
                     <Link to='/podcast-details' className="card">
-                        <img src={img7} alt=""/>
+                        <img src={img7} alt={t('trendy.podcast_alt')}/>
                         <h2>Startalk</h2>
-                        <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                        <p>{t('trendy.podcast_description')}</p>
                     </Link>
         
                     <Link to='/podcast-details' className="card">
-                        <img src={img8} alt=""/>
+                        <img src={img8} alt={t('trendy.podcast_alt')}/>
                         <h2>The Album Years</h2>
-                        <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                        <p>{t('trendy.podcast_description')}</p>
                     </Link>
         
                     <Link to='/podcast-details' className="card">
-                        <img src={img9} alt=""/>
+                        <img src={img9} alt={t('trendy.podcast_alt')}/>
                         <h2>Ear Hustle</h2>
-                        <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                        <p>{t('trendy.podcast_description')}</p>
                     </Link>
         
                     <Link to='/podcast-details' className="card">
-                        <img src={img10} alt=""/>
+                        <img src={img10} alt={t('trendy.podcast_alt')}/>
                         <h2>That Sounds Fun</h2>
-                        <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                        <p>{t('trendy.podcast_description')}</p>
                     </Link>
-
                 </Slider>
-                
             </div>
         </div>
     )

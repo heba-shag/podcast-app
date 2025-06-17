@@ -5,14 +5,28 @@ import { MdEmail, MdHistory, MdOutlineWork } from "react-icons/md";
 import { SlSettings } from "react-icons/sl";
 import './profile-style.css';
 import { NavLink } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+
+const iconComponents = {
+  BiUser,
+  SlSettings,
+  HiSwitchHorizontal,
+  MdEmail,
+  BiKey,
+  MdHistory,
+  MdOutlineWork,
+  FaRegIdCard
+};
 
 export default function Sidebar() {
+    const { t } = useTranslation();
+
     return (
         <div className="sidebar-container flex">
             <div className="cards-container flex">
                 <div className="card flex">
                     <div className="title flex">
-                        <h2>General</h2>
+                        <h2>{t('sidebar.general')}</h2>
                     </div>
                     <div className="btns flex">
                         <NavLink 
@@ -21,7 +35,8 @@ export default function Sidebar() {
                                 `btn flex ${isActive ? "active" : ""}`
                             }
                         >
-                            <BiUser className="icon"/> Personal information
+                            {iconComponents[t('sidebar.menuItems.personalInfo.icon')]()}
+                            {t('sidebar.menuItems.personalInfo.text')}
                         </NavLink>
                         <NavLink 
                             to='/preference' 
@@ -29,7 +44,8 @@ export default function Sidebar() {
                                 `btn flex ${isActive ? "active" : ""}`
                             }
                         >
-                            <SlSettings className="icon"/> Preferences
+                            {iconComponents[t('sidebar.menuItems.preferences.icon')]()}
+                            {t('sidebar.menuItems.preferences.text')}
                         </NavLink>
                         <NavLink 
                             to='/switch-account' 
@@ -37,7 +53,8 @@ export default function Sidebar() {
                                 `btn flex ${isActive ? "active" : ""}`
                             }
                         >
-                            <HiSwitchHorizontal className="icon"/> Switch accounts
+                            {iconComponents[t('sidebar.menuItems.switchAccounts.icon')]()}
+                            {t('sidebar.menuItems.switchAccounts.text')}
                         </NavLink>
                         <NavLink 
                             to='/change-email' 
@@ -45,7 +62,8 @@ export default function Sidebar() {
                                 `btn flex ${isActive ? "active" : ""}`
                             }
                         >
-                            <MdEmail className="icon"/> Change email
+                            {iconComponents[t('sidebar.menuItems.changeEmail.icon')]()}
+                            {t('sidebar.menuItems.changeEmail.text')}
                         </NavLink>
                         <NavLink 
                             to='/change-password' 
@@ -53,7 +71,8 @@ export default function Sidebar() {
                                 `btn flex ${isActive ? "active" : ""}`
                             }
                         >
-                            <BiKey className="icon"/> Change password
+                            {iconComponents[t('sidebar.menuItems.changePassword.icon')]()}
+                            {t('sidebar.menuItems.changePassword.text')}
                         </NavLink>
                         <NavLink 
                             to='/listening-history' 
@@ -61,14 +80,15 @@ export default function Sidebar() {
                                 `btn flex ${isActive ? "active" : ""}`
                             }
                         >
-                            <MdHistory className="icon"/> Listening history
+                            {iconComponents[t('sidebar.menuItems.listeningHistory.icon')]()}
+                            {t('sidebar.menuItems.listeningHistory.text')}
                         </NavLink>
                     </div>
                 </div>
 
                 <div className="card flex">
                     <div className="title flex">
-                        <h2>Credit and purchases</h2>
+                        <h2>{t('sidebar.creditPurchases')}</h2>
                     </div>
                     <div className="btns flex">
                         <NavLink 
@@ -77,7 +97,8 @@ export default function Sidebar() {
                                 `btn flex ${isActive ? "active" : ""}`
                             }
                         >
-                            <MdOutlineWork className="icon"/> Order history
+                            {iconComponents[t('sidebar.menuItems.orderHistory.icon')]()}
+                            {t('sidebar.menuItems.orderHistory.text')}
                         </NavLink>
                         <NavLink 
                             to='/card-info' 
@@ -85,7 +106,8 @@ export default function Sidebar() {
                                 `btn flex ${isActive ? "active" : ""}`
                             }
                         >
-                            <FaRegIdCard className="icon"/> Card information
+                            {iconComponents[t('sidebar.menuItems.cardInfo.icon')]()}
+                            {t('sidebar.menuItems.cardInfo.text')}
                         </NavLink>
                     </div>
                 </div>

@@ -15,8 +15,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"; 
 import Slider from 'react-slick';
 import { IoIosArrowForward } from 'react-icons/io';
+import { useTranslation } from 'react-i18next';
 
 export default function EducationSection(){
+    const { t } = useTranslation();
     const settings = {
         dots: false,
         infinite: true,
@@ -29,70 +31,70 @@ export default function EducationSection(){
     return(
         <div className="education-section section flex">
             <div className="header flex">
-                <h2 className="title">Education</h2>
-                <h3 className="more"><IoIosArrowForward className='icon' /><span>More</span></h3>
+                <h2 className="title">{t('education.title')}</h2>
+                <h3 className="more"><IoIosArrowForward className='icon' /><span>{t('trendy.more')}</span></h3>
             </div>
     
             <div className="cards-container flex">
                 <Slider {...settings}>
                     <div className="card">
-                        <img src={img1} alt=""/>
+                        <img src={img1} alt={t('trendy.podcast_alt')}/>
                         <h2>On Purpose</h2>
-                        <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                        <p>{t('trendy.podcast_description')}</p>
                     </div>
     
                     <div className="card">
-                        <img src={img2} alt=""/>
+                        <img src={img2} alt={t('trendy.podcast_alt')}/>
                         <h2>It Gets Interesting</h2>
-                        <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                        <p>{t('trendy.podcast_description')}</p>
                     </div>
         
                     <div className="card">
-                        <img src={img3} alt=""/>
+                        <img src={img3} alt={t('trendy.podcast_alt')}/>
                         <h2>The ADHD Adult Pod</h2>
-                        <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                        <p>{t('trendy.podcast_description')}</p>
                     </div>
         
                     <div className="card">
-                        <img src={img4} alt=""/>
+                        <img src={img4} alt={t('trendy.podcast_alt')}/>
                         <h2>BlowBack</h2>
-                        <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                        <p>{t('trendy.podcast_description')}</p>
                     </div>
         
                     <div className="card">
-                        <img src={img5} alt=""/>
+                        <img src={img5} alt={t('trendy.podcast_alt')}/>
                         <h2>Startalk</h2>
-                        <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                        <p>{t('trendy.podcast_description')}</p>
                     </div>
         
                     <div className="card">
-                        <img src={img6} alt=""/>
+                        <img src={img6} alt={t('trendy.podcast_alt')}/>
                         <h2>Not alone</h2>
-                        <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                        <p>{t('trendy.podcast_description')}</p>
                     </div>
         
                     <div className="card">
-                        <img src={img7} alt=""/>
+                        <img src={img7} alt={t('trendy.podcast_alt')}/>
                         <h2>Being HER </h2>
-                        <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                        <p>{t('trendy.podcast_description')}</p>
                     </div>
         
                     <div className="card">
-                        <img src={img8} alt=""/>
+                        <img src={img8} alt={t('trendy.podcast_alt')}/>
                         <h2>Self-Love Podcast</h2>
-                        <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                        <p>{t('trendy.podcast_description')}</p>
                     </div>
         
                     <div className="card">
-                        <img src={img9} alt=""/>
+                        <img src={img9} alt={t('trendy.podcast_alt')}/>
                         <h2>Empowered Principal</h2>
-                        <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                        <p>{t('trendy.podcast_description')}</p>
                     </div>
         
                     <div className="card">
-                        <img src={img10} alt=""/>
+                        <img src={img10} alt={t('trendy.podcast_alt')}/>
                         <h2>How to Build this</h2>
-                        <p>Podcast Description Lorem ipsum dolor sit amet</p>
+                        <p>{t('trendy.podcast_description')}</p>
                     </div>
 
                 </Slider>
